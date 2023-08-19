@@ -39,11 +39,31 @@
             }
 
             h2{
-                margin: 2rem;
+                margin: 2rem 2rem 0 2rem;
                 font-size: 3.4rem;
                 line-height: 1;
             }
 
+        }
+
+        .middle-header{
+            width: 100%;
+            .socials{
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                gap: 2rem;
+                li{
+                    a{
+                        color: white;
+                        font-size: 3.5rem;
+                        transition: all .3s;
+                        &:hover{
+                            color: $light-purple;
+                        }
+                    }
+                }
+            }
         }
     }
    

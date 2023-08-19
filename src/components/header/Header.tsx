@@ -1,4 +1,5 @@
 import "./Header.scss";
+import { FaSquareTwitter, FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 
 function Header() {
 
@@ -18,13 +19,13 @@ function Header() {
         <div className="middle-header">
           <ul className="socials">
             <li>
-              <a href="https://twitter.com/pancratzia">Twitter</a>
+              <a href="https://twitter.com/pancratzia"><FaSquareTwitter /></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/leortegaperez/">Linkedin</a>
+              <a href="https://www.linkedin.com/in/leortegaperez/"><FaLinkedin /></a>
             </li>
             <li>
-              <a href="https://github.com/pancratzia">Github</a>
+              <a href="https://github.com/pancratzia"><FaSquareGithub /></a>
             </li>
           </ul>
         </div>
