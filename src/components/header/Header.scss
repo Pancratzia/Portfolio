@@ -1,0 +1,51 @@
+
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/responsive.scss";
+.header{
+
+    background-color: $dark;
+    border-bottom: $light .5rem solid;
+
+    .container{
+        .top-header{
+
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+
+            a, h2{
+                color: white;
+            }
+
+            a{
+                h1{
+                    font-size: 4rem;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+
+                    span{
+                        font-size: 2rem;
+                        opacity: .8;
+                        text-decoration: line-through;
+                        width: 100%;
+                        text-align: right;
+                        
+                    }
+                }
+            }
+
+            h2{
+                margin: 2rem;
+                font-size: 3.4rem;
+                line-height: 1;
+            }
+
+        }
+    }
+   
+
+}

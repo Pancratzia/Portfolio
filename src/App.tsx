@@ -1,12 +1,12 @@
 import './assets/styles/App.scss'
+import Header from './components/header/Header'
 
 function App() {
 
   return (
     <>
-      <div className="contenedor">
-        Hola mundo
-      </div>
+    <Header />
+    
     </>
   )
 }
