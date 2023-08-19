@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# Laura Ortega's Web Development Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](portfolio-preview.png)
 
-Currently, two official plugins are available:
+Welcome to my web development portfolio! My name is Laura Ortega, and I go by the username **Pancratzia**. You can find me on GitHub at [Pancratzia](https://github.com/Pancratzia). This portfolio showcases some of the web development projects I have worked on, and is constantly being developed using React with TypeScript (TSX).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About Me
 
-## Expanding the ESLint configuration
+I am a passionate web developer with a strong background in creating dynamic and user-friendly web applications. My primary focus is on front-end development using the latest technologies to craft seamless user experiences.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Name:** Laura Ortega
+- **GitHub:** [Pancratzia](https://github.com/Pancratzia)
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Arduino
+- Bootstrap
+- C
+- C++
+- CSS3
+- Express
+- Git
+- HTML5
+- Ionic
+- Java
+- JavaScript
+- MongoDB
+- MySQL
+- Node.js
+- PHP
+- PostgreSQL
+- Postman
+- React
+- React Native
+- Sass
+- Spring
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Setup and Installation
+
+1. Clone this repository: `git clone https://github.com/Pancratzia/Portfolio.git`
+2. Navigate to the project directory: `cd portfolio`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+
+## Contact Me
+
+Feel free to reach out if you have any questions, suggestions, or collaboration opportunities. You can contact me through my [GitHub profile](https://github.com/Pancratzia).
+
+Let's connect and create amazing web experiences together!
+
