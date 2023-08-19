@@ -1,0 +1,40 @@
+import "./Footer.scss";
+
+type Props = {
+    fixed?: boolean;
+}
+
+function Footer(props: Props) {
+  return (
+    <div className={props.fixed?"footer fixed":"footer"}>
+      <div className="container">
+        <div className="links">
+        <ul>
+              <li>
+                <a href="#header">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+        </div>
+
+        <div className="copy">
+          <p>© {new Date().getFullYear()} - Laura Ortega</p>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+export default Footer;

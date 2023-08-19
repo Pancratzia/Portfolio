@@ -36,7 +36,7 @@ function Header() {
 
         <div className="bottom-header">
           <nav className="nav">
-            <ul className="active">
+            <ul>
               <li>
                 <a href="#header">Home</a>
               </li>

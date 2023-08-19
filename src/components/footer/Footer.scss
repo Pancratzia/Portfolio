@@ -1,0 +1,46 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/responsive.scss";
+
+.footer {
+  width: 100%;
+  background-color: $dark;
+  padding: 1rem 0;
+
+  &.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  .container {
+    .links {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        li {
+          a {
+            color: $white;
+            transition: all 0.5s ease;
+
+            &:hover {
+              color: $light-purple;
+            }
+          }
+        }
+      }
+    }
+
+    .copy {
+      p {
+        color: $white;
+        opacity: 0.8;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
