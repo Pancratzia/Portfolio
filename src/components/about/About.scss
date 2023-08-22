@@ -3,61 +3,119 @@
 
 .about {
   width: 100%;
-  margin: 4rem 0;
-  
-  .container{
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
+  margin: 3rem 0;
 
-      @include md {
-        flex-direction: row;
-        gap: 3rem;
-      }
-      
-      .img-container {
-        flex: 1;
-
-        .img{
-          width: 100%;
-          border-radius: 50%;
-          object-fit: cover;
-          border: .5rem $white solid;
-          animation: shadow-pulse 2s infinite;
-          transition: scale 0.5s ease;
-          
-          @include md {
-            &:hover{
-              scale: 1.1;
-              transition: scale 0.5s ease;
-              cursor: pointer;
-            }
-          }
-          
-        }
-      }
-    
-      .text-container {
-        flex: 2;
-        
-      }
+  @include md {
+    margin: 0 0 4rem;
   }
 
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: inherit;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @include md {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .img-container {
+      flex: 1;
+
+      .img {
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 0.5rem $light-purple solid;
+        animation: shadow-pulse 2s infinite;
+        transition: scale 0.5s ease;
+
+        &:hover {
+          scale: 1.1;
+          transition: scale 0.5s ease;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .text-container {
+      flex: 2;
+      display: grid;
+      gap: 1rem;
+      grid-auto-rows: 1fr;
+
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+
+      @include lg {
+        gap: 3rem;
+      }
+
+      .fact {
+        width: 100%;
+        text-align: center;
+        background-color: $white;
+        padding: 2rem 1rem;
+        border-radius: 1.5rem;
+        border: 0.5rem solid $light-purple;
+        transition: box-shadow 0.5s ease;
+
+        &:hover {
+          transition: box-shadow 0.5s ease;
+          box-shadow: 0 0 1rem $white;
+          cursor: pointer;
+
+          p {
+            transition: color 0.5s ease;
+            color: $black;
+          }
+        }
+
+
+        h3 {
+          font-size: 2.8rem;
+          font-weight: 800;
+        }
+
+        p {
+          @include md {
+            font-size: 1.8rem;
+            color: transparent;
+            transition: color 0.5s ease;
+          }
+        }
+      }
+    }
+  }
 }
 
-@keyframes shadow-pulse{
-  0%{
+@keyframes shadow-pulse {
+  0% {
     box-shadow: 0 0 1rem $white;
   }
 
-  50%{
+  50% {
     box-shadow: 0 0 3rem $white;
   }
 
-  100%{
+  100% {
     box-shadow: 0 0 1rem $white;
   }
 }
+
+
+

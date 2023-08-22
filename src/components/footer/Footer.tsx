@@ -14,7 +14,7 @@ function Footer(props: Props) {
                 <a href="#header">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about">About Me</a>
               </li>
               <li>
                 <a href="#skills">Skills</a>

@@ -6,7 +6,6 @@
   background-color: $dark;
   padding: 1rem 0;
 
-
   &.fixed {
     position: fixed;
     bottom: 0;
@@ -26,6 +25,11 @@
           a {
             color: $white;
             transition: all 0.5s ease;
+            font-size: 1.6rem;
+
+            @include lg {
+              font-size: 2rem;
+            }
 
             &:hover {
               color: $light-purple;
@@ -42,6 +46,10 @@
         text-align: center;
         font-size: 1.2rem;
         margin-top: 1rem;
+
+        @include lg {
+          font-size: 1.6rem;
+        }
       }
     }
   }
