@@ -1,0 +1,63 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/responsive.scss";
+
+.about {
+  width: 100%;
+  margin: 4rem 0;
+  
+  .container{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      @include md {
+        flex-direction: row;
+        gap: 3rem;
+      }
+      
+      .img-container {
+        flex: 1;
+
+        .img{
+          width: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+          border: .5rem $white solid;
+          animation: shadow-pulse 2s infinite;
+          transition: scale 0.5s ease;
+          
+          @include md {
+            &:hover{
+              scale: 1.1;
+              transition: scale 0.5s ease;
+              cursor: pointer;
+            }
+          }
+          
+        }
+      }
+    
+      .text-container {
+        flex: 2;
+        
+      }
+  }
+
+}
+
+@keyframes shadow-pulse{
+  0%{
+    box-shadow: 0 0 1rem $white;
+  }
+
+  50%{
+    box-shadow: 0 0 3rem $white;
+  }
+
+  100%{
+    box-shadow: 0 0 1rem $white;
+  }
+}

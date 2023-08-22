@@ -6,10 +6,12 @@
   background-color: $dark;
   padding: 1rem 0;
 
+
   &.fixed {
     position: fixed;
     bottom: 0;
     left: 0;
+    animation: slide-top 0.4s linear both;
   }
 
   .container {
@@ -42,5 +44,14 @@
         margin-top: 1rem;
       }
     }
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
