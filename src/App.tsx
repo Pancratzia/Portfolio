@@ -3,10 +3,11 @@ import "./assets/styles/App.scss";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
 
 function App() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const contentRef = useRef<HTMLDivElement | null>(null); // Agrega el tipo de referencia
+  const contentRef = useRef<HTMLDivElement | null>(null); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,7 +17,6 @@ function App() {
         setIsHeaderVisible(rect.bottom > 0);
       }
 
-      // Obtener la altura real del footer
       const footer = document.querySelector(".footer") as HTMLElement; // Asegura el tipo
       if (footer) {
         let footerHeight = footer.offsetHeight;
@@ -32,15 +32,20 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isHeaderVisible]);
+  
+
+  const contentHeight = contentRef.current?.offsetHeight || 0;
+  const windowHeight = window.innerHeight;
 
   return (
     <>
-      <div className="content" ref={contentRef}>
+      <div className="main-content" ref={contentRef}>
         <Header />
         <About />
+        <Skills />
       </div>
 
-      <Footer fixed={!isHeaderVisible} />
+      <Footer fixed={!isHeaderVisible || contentHeight <= windowHeight} />
     </>
   );
 }

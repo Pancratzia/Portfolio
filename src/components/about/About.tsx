@@ -45,7 +45,7 @@ function About() {
 
   return (
     <div className="about" id="about">
-      <h2>About Me</h2>
+      <h2 className="h2-title">About Me</h2>
       <div className="container">
       <div className="img-container">
         <img src={ProfileIMG} alt="Profile Image" className="img" />

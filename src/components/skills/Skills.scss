@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/responsive.scss";
+
+.skills {
+  .container {
+    background-color: $white;
+    border-radius: 1.5rem;
+    border: 0.5rem solid $light-purple;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icons-container {
+      position: relative;
+      margin: 0 auto;
+      width: 99%;
+      height: 47rem;
+
+      .bouncing-icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: transparent;
+        font-size: 4rem;
+      }
+    }
+  }
+}

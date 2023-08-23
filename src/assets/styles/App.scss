@@ -1,0 +1,8 @@
+@import './variables.scss';
+@import './responsive.scss';
+
+.main-content{
+    @include md {
+        padding-bottom: 4rem;
+    }
+}
