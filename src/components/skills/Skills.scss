@@ -27,6 +27,12 @@
         border-radius: 50%;
         background-color: transparent;
         font-size: 4rem;
+
+        @include md {
+          width: 6rem;
+          height: 6rem;
+          font-size: 5rem;
+        }
       }
     }
   }

@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
 
 function App() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -43,6 +44,7 @@ function App() {
         <Header />
         <About />
         <Skills />
+        <Projects />
       </div>
 
       <Footer fixed={!isHeaderVisible || contentHeight <= windowHeight} />
