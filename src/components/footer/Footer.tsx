@@ -1,12 +1,12 @@
 import "./Footer.scss";
 
 type Props = {
-    fixed?: boolean;
-}
+  fixed?: boolean;
+};
 
 function Footer(props: Props) {
   return (
-    <div className={props.fixed?"footer fixed":"footer"}>
+    <div className={`footer ${props.fixed ? "fixed" : ""}`}>
       <div className="container">
         <div className="links">
         <ul>
