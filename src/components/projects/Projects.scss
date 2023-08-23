@@ -1,3 +1,31 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/responsive.scss";
+
 .projects{
+
+    .container{
+
+        .projects-container{
+            display: grid;
+            width: 100%;
+            margin: 0 auto;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+
+            .card{
+               background-color: $white;
+               margin:  0 2rem;
+               
+                .card-header{
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+    }
     
 }
