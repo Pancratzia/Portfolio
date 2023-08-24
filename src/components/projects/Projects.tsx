@@ -29,10 +29,17 @@ function Projects() {
             </div>
 
             <div className="card-footer">
-              <a href="#"><SiGithub /></a>
-              <a href="#"><FaRegEye /></a>
+              <div className="icon">
+                <a href="#">
+                  <SiGithub />
+                </a>
+              </div>
+              <div className="icon">
+                <a href="#">
+                  <FaRegEye />
+                </a>
+              </div>
             </div>
-
           </div>
         </div>
       </div>

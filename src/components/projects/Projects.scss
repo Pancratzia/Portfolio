@@ -11,15 +11,81 @@
             margin: 0 auto;
             gap: 1rem;
             grid-template-columns: 1fr;
+            justify-items: center;
+
+            @include md {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include lg {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
 
             .card{
                background-color: $white;
                margin:  0 2rem;
+               border: .5rem solid $light-purple;
+               border-radius: 1.5rem;
+               padding: 1rem;
+               max-width: 30rem;
                
                 .card-header{
+
+                    h3{
+                        text-align: center;
+                        text-transform: uppercase;
+                        margin: .5rem 0;
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                    }
                     
                     img{
                         width: 100%;
+                        border-radius: 1.5rem;
+                    }
+                }
+
+                .card-body{
+                    p{
+                        margin: 1rem 0;
+                        text-align: justify;
+                        line-height: 1;
+                    }
+
+                    span{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .card-footer{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 1rem 0 0;
+                    gap: .1rem;
+
+                    .icon{
+                        background-color: $purple;
+                        width: 100%;
+                        cursor: pointer;
+                        border-radius: .5rem;
+                        transition: background-color 0.5s ease;
+
+                        a{
+                            width: 100%;
+                            padding: .5rem 0;
+                            display: block;
+                            color: $white;
+                            text-align: center;
+                            font-size: 2rem;
+                        }
+
+                        &:hover{
+                            background-color: $light-purple;
+                            transition: background-color 0.5s ease;
+                        }
                     }
                 }
 
