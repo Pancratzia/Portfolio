@@ -42,21 +42,28 @@ function Skills() {
       if (Math.random() > 0.5) dxValue = -dxValue;
       if (Math.random() > 0.5) dyValue = -dyValue;
       const moveIcon = () => {
-        if (x < 0 || x > iconsContainer.offsetWidth - 40) {
+        const maxX = iconsContainer.offsetWidth - bouncingIcon.offsetWidth;
+        const maxY = iconsContainer.offsetHeight - bouncingIcon.offsetHeight;
+      
+        if (x < 0 || x > maxX) {
           dxValue = -dxValue;
+          x = Math.max(0, Math.min(maxX, x)); // Mantener x dentro de los límites
         }
-        if (y < 0 || y > iconsContainer.offsetHeight - 40) {
+      
+        if (y < 0 || y > maxY) {
           dyValue = -dyValue;
+          y = Math.max(0, Math.min(maxY, y)); // Mantener y dentro de los límites
         }
-
+      
         x += dxValue;
         y += dyValue;
-
+      
         bouncingIcon.style.left = x + "px";
         bouncingIcon.style.top = y + "px";
-
+      
         requestAnimationFrame(moveIcon);
       };
+      
 
       moveIcon();
     };
