@@ -64,14 +64,15 @@
                     display: flex;
                     justify-content: space-between;
                     margin: 1rem 0 0;
-                    gap: .1rem;
+                    gap: .2rem;
 
                     .icon{
-                        background-color: $purple;
+                        background-color: $dark;
                         width: 100%;
                         cursor: pointer;
                         border-radius: .5rem;
-                        transition: background-color 0.5s ease;
+                        opacity: 1;
+                        transition: opacity 0.5s ease;
 
                         a{
                             width: 100%;
@@ -83,8 +84,8 @@
                         }
 
                         &:hover{
-                            background-color: $light-purple;
-                            transition: background-color 0.5s ease;
+                            opacity: .9;
+                            transition: opacity 0.5s ease;
                         }
                     }
                 }

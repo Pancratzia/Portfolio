@@ -1,46 +1,48 @@
-import "./Projects.scss";
-import { SiGithub } from "react-icons/si";
-import { FaRegEye } from "react-icons/fa";
-
-import "../../assets/styles/variables.scss";
-import "../../assets/styles/responsive.scss";
+import React from 'react';
+import { SiGithub } from 'react-icons/si';
+import { FaRegEye } from 'react-icons/fa';
+import Card from '../card/Card';
+import './Projects.scss'; // Importa el archivo SCSS de Projects
 
 function Projects() {
+  // Ejemplo de datos de proyecto (puedes reemplazarlos con tus propios datos)
+  const projectData = [
+    {
+      title: 'Project 1',
+      imageUrl: 'https://via.placeholder.com/300',
+      description: 'Description of Project 1',
+      date: '00/00/0000',
+      github: 'https://github.com',
+      live: 'https://live.com',
+    },
+    {
+      title: 'Project 2',
+      imageUrl: 'https://via.placeholder.com/300',
+      description: 'Description of Project 2',
+      date: '00/00/0000',
+      github: 'https://github.com',
+    },
+    // Agrega más proyectos según sea necesario
+  ];
+
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
       <h2 className="h2-title">Projects</h2>
 
       <div className="container">
         <div className="projects-container">
-          <div className="card">
-            <div className="card-header">
-              <h3>Project Title</h3>
-              <div className="img">
-                <img src="https://via.placeholder.com/300" alt="" />
-              </div>
-            </div>
-
-            <div className="card-body">
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <span>00/00/0000</span>
-            </div>
-
-            <div className="card-footer">
-              <div className="icon">
-                <a href="#">
-                  <SiGithub />
-                </a>
-              </div>
-              <div className="icon">
-                <a href="#">
-                  <FaRegEye />
-                </a>
-              </div>
-            </div>
-          </div>
+          {/* Mapea los datos de proyecto y crea una tarjeta para cada uno */}
+          {projectData.map((project, index) => (
+            <Card
+              key={index}
+              title={project.title}
+              imageUrl={project.imageUrl}
+              description={project.description}
+              date={project.date}
+              github={project.github}
+              live={project.live}
+            />
+          ))}
         </div>
       </div>
     </div>
@@ -48,3 +50,4 @@ function Projects() {
 }
 
 export default Projects;
+

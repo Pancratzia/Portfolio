@@ -8,7 +8,8 @@ import Projects from "./components/projects/Projects";
 
 function App() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const contentRef = useRef<HTMLDivElement | null>(null); 
+  const [footerHeight, setFooterHeight] = useState(0);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,36 +19,30 @@ function App() {
         setIsHeaderVisible(rect.bottom > 0);
       }
 
-      const footer = document.querySelector(".footer") as HTMLElement; // Asegura el tipo
+      const footer = document.querySelector(".footer") as HTMLElement;
       if (footer) {
-        let footerHeight = footer.offsetHeight;
-        footerHeight +=20;
-        if (contentRef.current) {
-          contentRef.current.style.marginBottom = !isHeaderVisible ? `${footerHeight}px` : "0";
-        }
+        const calculatedFooterHeight = footer.offsetHeight + 20;
+        setFooterHeight(calculatedFooterHeight);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Llama a handleScroll en la carga inicial para establecer la altura correcta
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isHeaderVisible]);
-  
-
-  const contentHeight = contentRef.current?.offsetHeight || 0;
-  const windowHeight = window.innerHeight;
+  }, []);
 
   return (
     <>
-      <div className="main-content" ref={contentRef}>
+      <div className="main-content" ref={contentRef} style={{ paddingBottom: `${footerHeight}px` }}>
         <Header />
         <About />
         <Skills />
         <Projects />
       </div>
 
-      <Footer fixed={!isHeaderVisible || contentHeight <= windowHeight} />
+      <Footer fixed={!isHeaderVisible} />
     </>
   );
 }
