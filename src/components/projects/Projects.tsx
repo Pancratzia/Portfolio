@@ -1,11 +1,7 @@
-import React from 'react';
-import { SiGithub } from 'react-icons/si';
-import { FaRegEye } from 'react-icons/fa';
 import Card from '../card/Card';
-import './Projects.scss'; // Importa el archivo SCSS de Projects
+import './Projects.scss';
 
 function Projects() {
-  // Ejemplo de datos de proyecto (puedes reemplazarlos con tus propios datos)
   const projectData = [
     {
       title: 'Project 1',
@@ -22,7 +18,6 @@ function Projects() {
       date: '00/00/0000',
       github: 'https://github.com',
     },
-    // Agrega más proyectos según sea necesario
   ];
 
   return (
@@ -31,7 +26,6 @@ function Projects() {
 
       <div className="container">
         <div className="projects-container">
-          {/* Mapea los datos de proyecto y crea una tarjeta para cada uno */}
           {projectData.map((project, index) => (
             <Card
               key={index}
