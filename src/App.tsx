@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 
 function App() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -40,6 +41,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </div>
 
       <Footer fixed={!isHeaderVisible} />
