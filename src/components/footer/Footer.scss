@@ -27,7 +27,11 @@
           a {
             color: $white;
             transition: all 0.5s ease;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+
+            @include md {
+              font-size: 1.8rem;
+            }
 
             @include lg {
               font-size: 2rem;
