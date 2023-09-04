@@ -2,10 +2,15 @@ import { useState, useEffect, SetStateAction, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./Contact.scss";
+import Swal from "sweetalert2";
 function Contact() {
   const [username, setUsername] = useState("");
   const [avatarUrl, setAvatarUrl] = useState("https://via.placeholder.com/50");
   const form = useRef<HTMLFormElement | null>(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     if (username.length >= 1) {
@@ -36,7 +41,6 @@ function Contact() {
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    
     event.preventDefault();
 
     const serviceID = import.meta.env.VITE_SERVICE_ID;
@@ -44,22 +48,36 @@ function Contact() {
     const publicKEY = import.meta.env.VITE_PUBLIC_KEY;
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          serviceID,
-          templateID,
-          form.current,
-          publicKEY
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            alert("Mensaje enviado");
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      emailjs.sendForm(serviceID, templateID, form.current, publicKEY).then(
+        (result) => {
+          Swal.fire({
+            icon: "success",
+            title: "Your email has been sent!",
+            text: "I will contact you as soon as possible!",
+            showConfirmButton: false,
+            timer: 3000,
+          });
+          console.log(result.text);
+
+          setName("");
+          setEmail("");
+          setUsername("");
+          setSubject("");
+          setMessage("");
+        },
+        (error) => {
+
+          console.error(error.text);
+
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      );
     } else {
       console.error("El formulario no se ha inicializado correctamente.");
     }
@@ -70,7 +88,12 @@ function Contact() {
       <div className="container">
         <h2 className="h2-title">Contact Me</h2>
         <div className="contact-container">
-          <form ref={form} onSubmit={handleSubmit} className="form" method="POST">
+          <form
+            ref={form}
+            onSubmit={handleSubmit}
+            className="form"
+            method="POST"
+          >
             <legend>Want to get in touch? Feel free to write a message!</legend>
 
             <div className="form-field">
@@ -80,6 +103,8 @@ function Contact() {
                 name="name"
                 id="name"
                 placeholder="Your name..."
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 required
               />
             </div>
@@ -91,6 +116,8 @@ function Contact() {
                 name="email"
                 id="email"
                 placeholder="Your email..."
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -108,6 +135,7 @@ function Contact() {
                     id="github-username"
                     placeholder="Your github username..."
                     onChange={handleUsernameChange}
+                    value={username}
                   />
                 </div>
               </div>
@@ -120,6 +148,8 @@ function Contact() {
                 name="subject"
                 id="subject"
                 placeholder="Your subject..."
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 required
               />
             </div>
@@ -130,6 +160,8 @@ function Contact() {
                 name="message"
                 id="message"
                 placeholder="Your message..."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
             </div>
