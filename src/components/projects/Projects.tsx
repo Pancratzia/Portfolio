@@ -4,19 +4,12 @@ import './Projects.scss';
 function Projects() {
   const projectData = [
     {
-      title: 'Project 1',
-      imageUrl: 'https://via.placeholder.com/300',
-      description: 'Description of Project 1',
-      date: '00/00/0000',
-      github: 'https://github.com',
-      live: 'https://live.com',
-    },
-    {
-      title: 'Project 2',
-      imageUrl: 'https://via.placeholder.com/300',
-      description: 'Description of Project 2',
-      date: '00/00/0000',
-      github: 'https://github.com',
+      title: 'PancraLocation',
+      imageUrl: 'pancralocation.jpg',
+      description: 'React Project using a node.js server and MongoDB with an optional SQLite alternative version to geolocate the user in realtime and verify if they\'re inside one of the five polygons around the globe.',
+      date: '05/08/2023',
+      github: 'https://github.com/Pancratzia/PancraLocation',
+      live: 'https://pancralocation.onrender.com/',
     },
   ];
 
@@ -30,7 +23,7 @@ function Projects() {
             <Card
               key={index}
               title={project.title}
-              imageUrl={project.imageUrl}
+              imageUrl={`/src/assets/img/${project.imageUrl}`}
               description={project.description}
               date={project.date}
               github={project.github}

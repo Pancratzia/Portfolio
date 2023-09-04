@@ -31,7 +31,7 @@ function Card(props: CardProps) {
       <div className="card-footer">
         {github && (
           <div className="icon">
-            <a href={github}>
+            <a href={github} target="_blank">
               <SiGithub />
             </a>
           </div>
@@ -39,7 +39,7 @@ function Card(props: CardProps) {
 
         {live && (
           <div className="icon">
-            <a href={live}>
+            <a href={live} target="_blank">
               <FaRegEye />
             </a>
           </div>
