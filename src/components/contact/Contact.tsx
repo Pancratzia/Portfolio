@@ -1,9 +1,11 @@
-import { useState, useEffect, SetStateAction } from "react";
+import { useState, useEffect, SetStateAction, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import "./Contact.scss";
 function Contact() {
   const [username, setUsername] = useState("");
   const [avatarUrl, setAvatarUrl] = useState("https://via.placeholder.com/50");
+  const form = useRef<HTMLFormElement | null>(null);
 
   useEffect(() => {
     if (username.length >= 1) {
@@ -33,12 +35,42 @@ function Contact() {
     setUsername(event.target.value);
   };
 
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    
+    event.preventDefault();
+
+    const serviceID = import.meta.env.VITE_SERVICE_ID;
+    const templateID = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKEY = import.meta.env.VITE_PUBLIC_KEY;
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          serviceID,
+          templateID,
+          form.current,
+          publicKEY
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            form.current?.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      console.error("El formulario no se ha inicializado correctamente.");
+    }
+  };
+
   return (
     <div className="contact">
       <div className="container">
         <h2 className="h2-title">Contact Me</h2>
         <div className="contact-container">
-          <form action="" className="form" method="POST">
+          <form ref={form} onSubmit={handleSubmit} className="form" method="POST">
             <legend>Want to get in touch? Feel free to write a message!</legend>
 
             <div className="form-field">
@@ -106,7 +138,6 @@ function Contact() {
               <input type="submit" value="Send" />
               <input type="reset" value="Reset" />
             </div>
-
           </form>
         </div>
       </div>
