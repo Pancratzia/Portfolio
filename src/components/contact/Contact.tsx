@@ -59,11 +59,7 @@ function Contact() {
           });
           console.log(result.text);
 
-          setName("");
-          setEmail("");
-          setUsername("");
-          setSubject("");
-          setMessage("");
+          resetForm();
         },
         (error) => {
 
@@ -82,6 +78,14 @@ function Contact() {
       console.error("El formulario no se ha inicializado correctamente.");
     }
   };
+
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setUsername("");
+    setSubject("");
+    setMessage("");
+  }
 
   return (
     <div className="contact" id="contact">
@@ -168,7 +172,7 @@ function Contact() {
 
             <div className="buttons">
               <input type="submit" value="Send" />
-              <input type="reset" value="Reset" />
+              <input type="button" value="Reset" onClick={resetForm} />
             </div>
           </form>
         </div>
