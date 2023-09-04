@@ -24,16 +24,18 @@
         text-transform: uppercase;
         
         a {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 900;
           transition: letter-spacing 0.5s ease;
 
           @include md {
+            font-size: 4rem;
             letter-spacing: .5rem;
             transition: letter-spacing 0.5s ease;
           }
 
           @include lg {
+            font-size: 5rem;
             letter-spacing: 1rem;
             transition: letter-spacing 0.5s ease;
           }
