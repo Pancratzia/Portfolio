@@ -23,7 +23,7 @@ function Projects() {
             <Card
               key={index}
               title={project.title}
-              imageUrl={`/src/assets/img/${project.imageUrl}`}
+              imageUrl={`/projects/${project.imageUrl}`}
               description={project.description}
               date={project.date}
               github={project.github}
