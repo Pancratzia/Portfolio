@@ -54,7 +54,7 @@ function Contact() {
         .then(
           (result) => {
             console.log(result.text);
-            form.current?.reset();
+            alert("Mensaje enviado");
           },
           (error) => {
             console.log(error.text);
