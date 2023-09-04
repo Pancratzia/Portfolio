@@ -1,6 +1,6 @@
 # Laura Ortega's Web Development Portfolio
 
-![Portfolio Preview](portfolio-preview.png)
+![Portfolio Preview](![64f66bdf44b9804d2635adc1](https://github.com/Pancratzia/Portfolio/assets/54899954/206caae7-c62e-4020-a15c-8f72b530dfdb)
 
 Welcome to my web development portfolio! My name is Laura Ortega, and I go by the username **Pancratzia**. You can find me on GitHub at [Pancratzia](https://github.com/Pancratzia). This portfolio showcases some of the web development projects I have worked on, and is constantly being developed using React with TypeScript (TSX).
 
