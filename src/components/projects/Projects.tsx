@@ -29,9 +29,9 @@ function Projects() {
     {
       title: 'Bienes Raices',
       imageUrl: 'bienesraices.png',
-      description: 'Frontend project creating a real estate website using HTML, CSS and JS for Juan Pablo de la Torre Valdez Web Development course on Udemy and deployed on netlify.',
+      description: 'FullStack project creating a real state website using HTML, SASS, JS, PHP & MySQL for Juan Pablo de la Torre Valdez Web Development course on Udemy and deployed on 000webhost.',
       date: '27/10/2022',
-      live: 'https://pancratzia-bienesraices-responsive.netlify.app/',
+      live: 'https://pancratzia-bienesraices.000webhostapp.com/',
     }
   ];
 
