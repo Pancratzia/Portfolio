@@ -1,51 +1,27 @@
-# Laura Ortega's Web Development Portfolio
+# React + TypeScript + Vite
 
-![64f66bdf44b9804d2635adc1](https://github.com/Pancratzia/Portfolio/assets/54899954/206caae7-c62e-4020-a15c-8f72b530dfdb)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Welcome to my web development portfolio! My name is Laura Ortega, and I go by the username **Pancratzia**. You can find me on GitHub at [Pancratzia](https://github.com/Pancratzia). This portfolio showcases some of the web development projects I have worked on, and is constantly being developed using React with TypeScript (TSX).
+Currently, two official plugins are available:
 
-## About Me
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-I am a passionate web developer with a strong background in creating dynamic and user-friendly web applications. My primary focus is on front-end development using the latest technologies to craft seamless user experiences.
+## Expanding the ESLint configuration
 
-- **Name:** Laura Ortega
-- **GitHub:** [Pancratzia](https://github.com/Pancratzia)
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## Tech Stack
+- Configure the top-level `parserOptions` property like this:
 
-- Arduino
-- Bootstrap
-- C
-- C++
-- CSS3
-- Express
-- Git
-- HTML5
-- Ionic
-- Java
-- JavaScript
-- MongoDB
-- MySQL
-- Node.js
-- PHP
-- PostgreSQL
-- Postman
-- React
-- React Native
-- Sass
-- Spring
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
+```
 
-
-## Setup and Installation
-
-1. Clone this repository: `git clone https://github.com/Pancratzia/Portfolio.git`
-2. Navigate to the project directory: `cd portfolio`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
-
-## Contact Me
-
-Feel free to reach out if you have any questions, suggestions, or collaboration opportunities. You can contact me through my [GitHub profile](https://github.com/Pancratzia).
-
-Let's connect and create amazing web experiences together!
-
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
