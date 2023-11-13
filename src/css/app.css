@@ -115,12 +115,13 @@ ul {
   gap: 5rem;
   margin: 2rem 0;
 }
-.header__icon {
+
+.social__icon {
   color: #fff;
   font-size: clamp(3rem, 6vw, 5rem);
   transition: color 0.3s;
 }
-.header__icon:hover {
+.social__icon:hover {
   color: #ffc84d;
 }
 

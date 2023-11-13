@@ -1,0 +1,13 @@
+@use "../base/variables" as v;
+
+.social {
+  &__icon {
+    color: v.$white;
+    font-size: clamp(3rem, 6vw, 5rem);
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten(v.$yellow, 15%);
+    }
+  }
+}

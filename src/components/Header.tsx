@@ -1,3 +1,4 @@
+import Navbar from "./Navbar";
 import { Social } from "./Social";
 
 
@@ -19,9 +20,10 @@ const Header = () => {
           <Social href="https://twitter.com/pancratzia" text="Pancratzia's Twitter" icon="fab fa-twitter-square" />
           <Social href="https://github.com/pancratzia" text="Pancratzia's GitHub" icon="fab fa-github-square" />
           <Social href="https://www.linkedin.com/in/leortegaperez" text="Pancratzia's LinkedIn" icon="fab fa-linkedin" />
-
         </div>
       </div>
+
+      <Navbar />
     </div>
   );
 };
