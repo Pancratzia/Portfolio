@@ -1,4 +1,12 @@
 const Navbar = () => {
+  const navbarLinks = [
+    { text: "Home", href: "#" },
+    { text: "About Me", href: "#" },
+    { text: "Skills", href: "#" },
+    { text: "Projects", href: "#" },
+    { text: "Contact", href: "#" },
+  ];
+
   const handleClick = () => {
     const openNavbar = document.getElementById("openNavbar");
     const closeNavbar = document.getElementById("closeNavbar");
@@ -12,8 +20,7 @@ const Navbar = () => {
     navbarLinks.forEach((link) => {
       link.classList.toggle("navbar__link--visible");
       link.classList.toggle("navbar__link--hidden");
-    })
-
+    });
   };
 
   return (
@@ -24,25 +31,19 @@ const Navbar = () => {
           className="navbar__icon fas fa-bars navbar__icon--visible"
         ></i>
         <i
-          id="closeNavbar"
+          id="closeNavbar" 
           className="navbar__icon fas fa-times navbar__icon--hidden"
         ></i>
       </div>
-      <a href="#" className="navbar__link navbar__link--hidden">
-        Home
-      </a>
-      <a href="#" className="navbar__link navbar__link--hidden">
-        About Me
-      </a>
-      <a href="#" className="navbar__link navbar__link--hidden">
-        Skills
-      </a>
-      <a href="#" className="navbar__link navbar__link--hidden">
-        Projects
-      </a>
-      <a href="#" className="navbar__link navbar__link--hidden">
-        Contact
-      </a>
+      {navbarLinks.map((link, index) => (
+        <a
+          key={index}
+          href={link.href}
+          className={`navbar__link navbar__link--hidden`}
+        >
+          {link.text}
+        </a>
+      ))}
     </nav>
   );
 };
