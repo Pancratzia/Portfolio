@@ -2,5 +2,70 @@
 @use '../base/mixins' as m;
 
 .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
 
+    @include m.tablet{
+        @include m.container;
+        margin-top: 3rem;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 3rem;
+    }
+
+    &__action{
+
+        svg{
+            font-size: 4rem;
+            fill: v.$white;
+            color: v.$white;
+            margin-bottom: 2rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+
+        @include m.tablet{
+            display: none;
+        }
+    }
+
+    &__icon{
+        &--hidden{
+            display: none;
+        }
+
+        &--visible{
+            display: block;
+        }
+    }
+
+    &__link{
+        color: v.$white;
+        padding: 2rem 0;
+        font-weight: v.$bold;
+        display: block;
+        text-align: center;
+
+        &:hover{
+            cursor: pointer;
+            color: lighten(v.$yellow, 15%);
+        }
+
+        &--hidden{
+            display: none;
+        }
+
+        &--visible{
+            display: block;
+        }
+
+        @include m.tablet{
+            display: block;
+        }
+    }
 }

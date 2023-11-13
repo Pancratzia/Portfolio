@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
       <Header />
+      Hola mundo
     </div>
   )
 }
