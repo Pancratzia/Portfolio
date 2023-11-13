@@ -45,7 +45,17 @@
     }
 
     &__link{
-        color: v.$white;
+        background-image: linear-gradient(
+            to right bottom,
+            v.$purple,
+            lighten(v.$purple, 10%),
+            lighten(v.$yellow, 20%),
+            v.$yellow,
+            darken(v.$yellow, 20%)
+        );
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
         padding: 2rem 0;
         font-weight: v.$bold;
         display: block;

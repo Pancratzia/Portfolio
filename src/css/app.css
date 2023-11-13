@@ -163,7 +163,10 @@ ul {
   display: block;
 }
 .navbar__link {
-  color: #fff;
+  background-image: linear-gradient(to right bottom, #7743DB, #966ee3, #ffd066, #FFB100, #996a00);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   padding: 2rem 0;
   font-weight: 700;
   display: block;
