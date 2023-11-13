@@ -1,28 +1,61 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-size: 16px;
-    font-family: v.$fontOpenSans;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: v.$fontOpenSans;
+  background-color: v.$lightCream;
+  background-image: linear-gradient(
+    to top right,
+    v.$purple,
+    lighten(v.$purple, 10%),
+    lighten(v.$purple, 10%),
+    v.$yellow,
+    lighten(v.$yellow, 20%)
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 120rem;
-    margin: 0 auto;
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
 }

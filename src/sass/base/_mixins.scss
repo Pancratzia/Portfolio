@@ -23,3 +23,21 @@
         @content;
     }
 }
+
+@mixin container{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin container-md{
+    width: 85%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+@mixin container-sm{
+    width: 90%;
+    max-width: 90rem;
+    margin: 0 auto;
+}

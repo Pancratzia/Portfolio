@@ -1,0 +1,87 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.header {
+  padding: 2rem 0;
+  background-color: darken(v.$purple, 45%);
+
+  &__grid {
+    @include m.container;
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__logo {
+    font-family: v.$fontTitillium;
+    font-weight: v.$black;
+    font-size: clamp(4rem, 6vw, 6rem);
+  }
+
+  &__link {
+    background-image: linear-gradient(
+      to bottom right,
+      v.$purple,
+      lighten(v.$purple, 10%),
+      lighten(v.$purple, 10%),
+      v.$yellow,
+      lighten(v.$yellow, 20%)
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  &__alias {
+    color: v.$white;
+    text-align: right;
+    margin-right: 2rem;
+    font-size: clamp(0.5rem, 6vw, 2rem);
+    text-decoration: line-through;
+    opacity: 0.8;
+  }
+
+  &__subtitle {
+    color: v.$white;
+    margin: 2rem 0;
+    font-size: clamp(1.5rem, 6vw, 2.6rem);
+    font-weight: v.$bold;
+
+    &::after, &::before {
+      content: '• • •';
+      display: inline-block;
+      margin: 0 1rem;
+      color: v.$yellow;
+      vertical-align: middle;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem 0;
+  }
+
+  &__icon {
+    color: v.$white;
+    font-size: clamp(3rem, 6vw, 5rem);
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten(v.$yellow, 15%);
+    }
+  }
+}

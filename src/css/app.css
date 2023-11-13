@@ -1,10 +1,13 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Titillium+Web:wght@400;700;900&display=swap");
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,16 +17,111 @@ body {
   min-height: 100vh;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  background-color: #FFFBF5;
+  background-image: linear-gradient(to top right, #7743DB, #966ee3, #966ee3, #FFB100, #ffd066);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-.container {
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  padding: 2rem 0;
+  background-color: #16092f;
+}
+.header__grid {
   width: 90%;
   max-width: 120rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .header__grid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__info {
+  text-align: center;
+}
+.header__logo {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-size: clamp(4rem, 6vw, 6rem);
+}
+.header__link {
+  background-image: linear-gradient(to bottom right, #7743DB, #966ee3, #966ee3, #FFB100, #ffd066);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.header__alias {
+  color: #fff;
+  text-align: right;
+  margin-right: 2rem;
+  font-size: clamp(0.5rem, 6vw, 2rem);
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+.header__subtitle {
+  color: #fff;
+  margin: 2rem 0;
+  font-size: clamp(1.5rem, 6vw, 2.6rem);
+  font-weight: 700;
+}
+.header__subtitle::after, .header__subtitle::before {
+  content: "• • •";
+  display: inline-block;
+  margin: 0 1rem;
+  color: #FFB100;
+  vertical-align: middle;
+}
+.header__socials {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 2rem 0;
+}
+.header__icon {
+  color: #fff;
+  font-size: clamp(3rem, 6vw, 5rem);
+  transition: color 0.3s;
+}
+.header__icon:hover {
+  color: #ffc84d;
 }
 
 /*# sourceMappingURL=app.css.map */
