@@ -188,4 +188,14 @@ ul {
   }
 }
 
+.about {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin: 1rem auto;
+}
+.about__image {
+  border-radius: 40%;
+}
+
 /*# sourceMappingURL=app.css.map */

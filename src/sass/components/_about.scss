@@ -1,0 +1,15 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.about{
+    @include m.container;
+    margin: 1rem auto;
+
+    &__image-container{
+        
+    }
+
+    &__image{
+        border-radius: 40%;
+    }
+}
