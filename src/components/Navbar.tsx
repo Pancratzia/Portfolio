@@ -1,6 +1,5 @@
 const Navbar = () => {
   const navbarLinks = [
-    { text: "Home", href: "#" },
     { text: "About Me", href: "#" },
     { text: "Skills", href: "#" },
     { text: "Projects", href: "#" },

@@ -1,43 +1,101 @@
+@use "variables" as v;
 
+@mixin phone {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
 
-@mixin phone{
-    @media (min-width: 480px){
-        @content;
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktopXL {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+@mixin container-md {
+  width: 85%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+@mixin container-sm {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+@mixin grid($columnas, $espaciado) {
+  display: grid;
+  gap: $espaciado;
+  grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin heading {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-family: v.$fontTitillium;
+  font-weight: v.$black;
+  color: v.$white;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+
+  &::after {
+    content: "• • •";
+    display: block;
+    color: v.$yellow;
+    font-family: v.$fontOpenSans;
+    margin: 0;
+    padding: 0;
+
+    @include tablet {
+      margin-top: -2rem;
     }
+  }
 }
 
-@mixin tablet{
-    @media (min-width: 768px){
-        @content;
-    }
+@mixin card {
+  background-color: rgba(v.$white, 0.8);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(v.$blackColor, 0.25) 0px 0.0625em 0.0625em,
+    rgba(v.$blackColor, 0.25) 0px 0.125em 0.5em,
+    rgba(v.$white, 0.1) 0px 0px 0px 1px inset;
 }
 
-@mixin desktop{
-    @media (min-width: 1024px){
-        @content;
-    }
-}
-
-@mixin desktopXL{
-    @media (min-width: 1200px){
-        @content;
-    }
-}
-
-@mixin container{
-    width: 90%;
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-@mixin container-md{
-    width: 85%;
-    max-width: 100rem;
-    margin: 0 auto;
-}
-
-@mixin container-sm{
-    width: 90%;
-    max-width: 90rem;
-    margin: 0 auto;
+@mixin keyword {
+  background-image: linear-gradient(
+    to bottom right,
+    #7743db,
+    #966ee3,
+    #966ee3,
+    #ffb100,
+    #ffd066
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-weight: v.$bold;
 }
