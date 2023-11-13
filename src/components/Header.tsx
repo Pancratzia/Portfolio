@@ -1,3 +1,6 @@
+import { Social } from "./Social";
+
+
 const Header = () => {
   return (
     <div className="header">
@@ -12,30 +15,11 @@ const Header = () => {
           <p className="header__subtitle">FullStack Developer</p>
         </div>
         <div className="header__socials">
-          <div className="header__social">
-            <a href="https://twitter.com/pancratzia" rel="noreferrer" target="_blank">
-              <i className="header__icon fab fa-twitter-square"></i>
-              <span className="hidden">Pancratzia's Twitter</span>
-            </a>
-          </div>
 
-          <div className="header__social">
-            <a href="https://github.com/pancratzia" rel="noreferrer" target="_blank">
-              <i className="header__icon fab fa-github-square"></i>
-              <span className="hidden">Pancratzia's GitHub</span>
-            </a>
-          </div>
+          <Social href="https://twitter.com/pancratzia" text="Pancratzia's Twitter" icon="fab fa-twitter-square" />
+          <Social href="https://github.com/pancratzia" text="Pancratzia's GitHub" icon="fab fa-github-square" />
+          <Social href="https://www.linkedin.com/in/leortegaperez" text="Pancratzia's LinkedIn" icon="fab fa-linkedin" />
 
-          <div className="header__social">
-            <a 
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/leortegaperez/"
-              target="_blank"
-            >
-              <i className="header__icon fab fa-linkedin"></i>
-              <span className="hidden">Pancratzia's LinkedIn</span>
-            </a>
-          </div>
         </div>
       </div>
     </div>
