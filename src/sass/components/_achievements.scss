@@ -11,7 +11,7 @@
     }
 
     &__grid{
-        @include m.container-sm;
+        @include m.container-md;
         @include m.grid(1, 2rem);
 
         @include m.tablet{
@@ -66,10 +66,6 @@
                 color: v.$purple;
             }
         }
-    }
-
-    &:hover{
-        cursor: pointer;
     }
 
     &__title{

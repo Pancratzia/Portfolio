@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import useFetch from "../hooks/useFetch";
 import { Achievement } from "./Achievement";
-import AOS from "aos";
+import Aos from "aos";
 import "aos/dist/aos.css";
 import { ANIMATIONS } from "../data/consts";
 import { random } from "../utils/functions";
@@ -26,8 +26,8 @@ const Achievements = () => {
   );
 
   useEffect(() => {
-    AOS.init();
-  }, [])
+    Aos.init();
+  }, []);
 
   return (
     <div className="achievements" id="achievements">
