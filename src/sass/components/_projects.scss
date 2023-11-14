@@ -1,0 +1,14 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.projects{
+
+    margin: 3rem auto;
+
+
+    &__heading{
+        @include m.heading;
+    }
+}
+
+.project{}

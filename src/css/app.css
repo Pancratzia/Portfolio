@@ -479,6 +479,33 @@ ul {
   }
 }
 
+.projects {
+  margin: 3rem auto;
+}
+.projects__heading {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+.projects__heading::after {
+  content: "• • •";
+  display: block;
+  color: #FFB100;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .projects__heading::after {
+    margin-top: -2rem;
+  }
+}
+
 .footer {
   text-align: center;
   background-color: #16092f;
