@@ -450,4 +450,27 @@ ul {
   }
 }
 
+.footer {
+  text-align: center;
+  background-color: #16092f;
+  padding: 3rem 0;
+}
+.footer__text {
+  font-weight: 700;
+  background-image: linear-gradient(to bottom right, #7743db, #966ee3, #ffb100 85%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.footer__alias {
+  opacity: 0.8;
+  text-decoration: line-through;
+  font-family: "Titillium Web", sans-serif;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
 /*# sourceMappingURL=app.css.map */

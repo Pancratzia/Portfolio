@@ -2,7 +2,7 @@ const Navbar = () => {
   const navbarLinks = [
     { text: "About Me", href: "#about" },
     { text: "Achievements", href: "#achievements" },
-    { text: "Skills", href: "#" },
+    { text: "Skills", href: "#skills" },
     { text: "Projects", href: "#" },
     { text: "Contact", href: "#" },
   ];
