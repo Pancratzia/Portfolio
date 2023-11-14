@@ -50,8 +50,25 @@
         }
     }
 
+    &:nth-child(3){
+        @media screen and (768px < width < 1024px){
+            border-top: .5rem solid v.$purple;
+            .achievement__number{
+                color: v.$yellow;
+            }
+        }
+    }
+
+    &:nth-child(4){
+        @media screen and (768px < width < 1024px){
+            border-top: .5rem solid v.$yellow;
+            .achievement__number{
+                color: v.$purple;
+            }
+        }
+    }
+
     &:hover{
-        transform: scale(1.05);
         cursor: pointer;
     }
 

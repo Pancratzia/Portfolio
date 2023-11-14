@@ -345,8 +345,23 @@ ul {
 .achievement:nth-child(even) .achievement__number {
   color: #FFB100;
 }
+@media screen and (768px < width < 1024px) {
+  .achievement:nth-child(3) {
+    border-top: 0.5rem solid #7743DB;
+  }
+  .achievement:nth-child(3) .achievement__number {
+    color: #FFB100;
+  }
+}
+@media screen and (768px < width < 1024px) {
+  .achievement:nth-child(4) {
+    border-top: 0.5rem solid #FFB100;
+  }
+  .achievement:nth-child(4) .achievement__number {
+    color: #7743DB;
+  }
+}
 .achievement:hover {
-  transform: scale(1.05);
   cursor: pointer;
 }
 .achievement__title {
