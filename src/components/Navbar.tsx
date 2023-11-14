@@ -1,4 +1,10 @@
+import { useState } from "react";
+
+
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   const navbarLinks = [
     { text: "About Me", href: "#about" },
     { text: "Achievements", href: "#achievements" },
@@ -8,42 +14,28 @@ const Navbar = () => {
   ];
 
   const handleClick = () => {
-    const openNavbar = document.getElementById("openNavbar");
-    const closeNavbar = document.getElementById("closeNavbar");
-    const navbarLinks = document.querySelectorAll(".navbar__link");
-
-    openNavbar?.classList.toggle("navbar__icon--hidden");
-    openNavbar?.classList.toggle("navbar__icon--visible");
-    closeNavbar?.classList.toggle("navbar__icon--visible");
-    closeNavbar?.classList.toggle("navbar__icon--hidden");
-
-    navbarLinks.forEach((link) => {
-      link.classList.toggle("navbar__link--visible");
-      link.classList.toggle("navbar__link--hidden");
-    });
+    setIsOpen(!isOpen);
   };
 
   return (
     <nav className="navbar">
       <div className="navbar__action" onClick={handleClick}>
-        <i
-          id="openNavbar"
-          className="navbar__icon fas fa-bars navbar__icon--visible"
-        ></i>
-        <i
-          id="closeNavbar" 
-          className="navbar__icon fas fa-times navbar__icon--hidden"
-        ></i>
+        <div className={isOpen? "navbar__icon open" : "navbar__icon close" }>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      {navbarLinks.map((link, index) => (
-        <a
-          key={index}
-          href={link.href}
-          className={`navbar__link navbar__link--hidden`}
-        >
-          {link.text}
-        </a>
-      ))}
+      <div className={isOpen? "navbar__links open" : "navbar__links close"}>
+        {navbarLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.href}
+            className={`navbar__link`}
+          >
+            {link.text}
+          </a>
+        ))}
+      </div>
     </nav>
   );
 };

@@ -1,81 +1,110 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
-.navbar{
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+
+  @include m.tablet {
+    @include m.container;
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+  &__action {
+    @include m.tablet {
+      display: none;
+    }
+  }
+
+  &__icon {
+    span {
+      display: block;
+      width: 4rem;
+      height: 0.5rem;
+      background-color: v.$white;
+      margin: 1rem 0;
+      transition: all 0.3s;
+    }
+
+    &.close {
+      span:nth-child(1) {
+        transform: translateY(0.5rem) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        transform: translateY(-1rem) rotate(-45deg);
+      }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+  }
+
+  &__links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    height: 0;
+    opacity: 0;
 
-    @include m.tablet{
-        @include m.container;
-        margin-top: 3rem;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 3rem;
-    }
+    &.close {
+      height: 100%;
+      opacity: 1;
+      transition: height 0.3s, opacity 0.3s;
 
-    &__action{
-
-        svg{
-            font-size: 4rem;
-            fill: v.$white;
-            color: v.$white;
-            margin-bottom: 2rem;
-
-            &:hover{
-                cursor: pointer;
-            }
-
-        }
-
-        @include m.tablet{
-            display: none;
-        }
-    }
-
-    &__icon{
-        &--hidden{
-            display: none;
-        }
-
-        &--visible{
-            display: block;
-        }
-    }
-
-    &__link{
-        background-image: linear-gradient(
-            to right bottom,
-            v.$purple,
-            lighten(v.$purple, 10%),
-            lighten(v.$yellow, 20%),
-            v.$yellow,
-            darken(v.$yellow, 20%)
-        );
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        padding: 2rem 0;
-        font-weight: v.$bold;
+      .navbar__link {
+        opacity: 1;
         display: block;
-        text-align: center;
-
-        &:hover{
-            cursor: pointer;
-            color: lighten(v.$yellow, 15%);
-        }
-
-        &--hidden{
-            display: none;
-        }
-
-        &--visible{
-            display: block;
-        }
-
-        @include m.tablet{
-            display: block;
-        }
+      }
     }
+
+    &.open {
+      height: 0;
+
+      .navbar__link {
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    @include m.tablet {
+      flex-direction: row;
+      gap: 2rem;
+      height: 100% !important;
+      opacity: 1 !important;
+
+      .navbar__link {
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+  }
+
+  &__link {
+    background-image: linear-gradient(
+      to right bottom,
+      v.$purple,
+      lighten(v.$purple, 10%),
+      lighten(v.$yellow, 20%),
+      v.$yellow,
+      darken(v.$yellow, 20%)
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 2rem 0;
+    font-weight: v.$bold;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      color: lighten(v.$yellow, 15%);
+    }
+  }
 }
