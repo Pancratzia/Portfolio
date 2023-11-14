@@ -2,7 +2,7 @@
 @use "../base/mixins" as m;
 
 .header {
-  padding: 2rem 0;
+  padding: 4rem 0 2rem;
   background-color: darken(v.$purple, 45%);
 
   &__grid {

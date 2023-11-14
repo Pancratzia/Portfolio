@@ -54,7 +54,7 @@ ul {
 }
 
 .header {
-  padding: 2rem 0;
+  padding: 4rem 0 2rem;
   background-color: #16092f;
 }
 .header__grid {
@@ -130,6 +130,7 @@ ul {
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+  border-top: 0.3rem solid rgba(255, 255, 255, 0.1);
 }
 @media (min-width: 768px) {
   .navbar {
@@ -146,6 +147,9 @@ ul {
   .navbar__action {
     display: none;
   }
+}
+.navbar__icon {
+  margin: 3rem 0 0;
 }
 .navbar__icon span {
   display: block;
@@ -174,7 +178,6 @@ ul {
 .navbar__links.close {
   height: 100%;
   opacity: 1;
-  transition: height 0.3s, opacity 0.3s;
 }
 .navbar__links.close .navbar__link {
   opacity: 1;
