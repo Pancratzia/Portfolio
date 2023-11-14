@@ -1,5 +1,8 @@
+import { useEffect } from "react";
 import useFetch from "../hooks/useFetch";
 import { Achievement } from "./Achievement";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Achievements = () => {
   const {
@@ -20,6 +23,18 @@ const Achievements = () => {
     import.meta.env.VITE_GITHUB_API_KEY
   );
 
+  const ANIMATIONS = [
+    "fade-up", "flip-up", "flip-right", "flip-down", "flip-left", "zoom-in", "zoom-in-up", "zoom-in-down"
+  ]
+
+  const randomAnimation = () => {
+    return ANIMATIONS[Math.floor(Math.random() * ANIMATIONS.length)];
+  }
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div className="achievements" id="achievements">
       <h2 className="achievements__heading">My Achievements</h2>
@@ -30,6 +45,7 @@ const Achievements = () => {
           data={reposData}
           number={Array.isArray(reposData) ? reposData.length : 0}
           error={errorData}
+          aos={randomAnimation()}
         />
 
         <Achievement
@@ -38,6 +54,7 @@ const Achievements = () => {
           data={memberData}
           number={null}
           error={errorMember}
+          aos={randomAnimation()}
         />
 
         <Achievement
@@ -46,6 +63,7 @@ const Achievements = () => {
           data={null}
           number="+20"
           error={null}
+          aos={randomAnimation()}
         />
 
         <Achievement
@@ -54,6 +72,7 @@ const Achievements = () => {
           data={null}
           number="+5"
           error={null}
+          aos={randomAnimation()}
         />
       </div>
     </div>

@@ -6,12 +6,13 @@ interface AchievementProps {
     data: { created_at?: string } | null;
     number: string | number | null;
     error: any;
+    aos?: string;
   }
   
-  export const Achievement: FC<AchievementProps> = ({ title, loading, data, number, error }) => {
+  export const Achievement: FC<AchievementProps> = ({ title, loading, data, number, error, aos }) => {
     
     return (
-      <div className="achievement">
+      <div className="achievement" data-aos={aos}>
         <h3 className="achievement__title">{title}</h3>
         <p className="achievement__number">
           {loading && "..."}

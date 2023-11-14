@@ -8,9 +8,11 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "sass" : "sass src/sass:src/css --watch"
+    "sass": "sass src/sass:src/css --watch"
   },
   "dependencies": {
+    "@types/aos": "^3.0.7",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
