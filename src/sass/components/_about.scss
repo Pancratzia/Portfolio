@@ -14,7 +14,7 @@
     @include m.grid(1, 2rem);
 
     @include m.tablet {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 35% auto;
 
       align-items: center;
       justify-items: center;
@@ -23,6 +23,7 @@
 
   &__image-container {
     border-radius: 50%;
+    border: .3rem solid v.$yellow;
     overflow: hidden;
     background-image: url("../assets/img/shape.svg");
     background-position: center center;

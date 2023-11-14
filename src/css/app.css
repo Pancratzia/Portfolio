@@ -253,13 +253,14 @@ ul {
 }
 @media (min-width: 768px) {
   .about__grid {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 35% auto;
     align-items: center;
     justify-items: center;
   }
 }
 .about__image-container {
   border-radius: 50%;
+  border: 0.3rem solid #FFB100;
   overflow: hidden;
   background-image: url("../assets/img/shape.svg");
   background-position: center center;
