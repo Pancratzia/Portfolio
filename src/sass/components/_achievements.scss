@@ -27,7 +27,6 @@
 .achievement{
 
     @include m.card;
-    border-radius: .8rem;
     text-align: center;
     transition: transform 0.3s;
     display: flex;
