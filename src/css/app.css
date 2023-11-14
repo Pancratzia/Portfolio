@@ -188,9 +188,6 @@ ul {
 }
 
 .about {
-  width: 90%;
-  max-width: 120rem;
-  margin: 0 auto;
   margin: 3rem auto;
 }
 .about__heading {
@@ -217,6 +214,9 @@ ul {
   }
 }
 .about__grid {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
@@ -268,6 +268,85 @@ ul {
   -webkit-background-clip: text;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.achievements {
+  margin: 3rem auto;
+}
+.achievements__heading {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+.achievements__heading::after {
+  content: "• • •";
+  display: block;
+  color: #FFB100;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .achievements__heading::after {
+    margin-top: -2rem;
+  }
+}
+.achievements__grid {
+  width: 90%;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .achievements__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.achievement {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 0.8rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.achievement:nth-child(odd) {
+  border-top: 0.5rem solid #FFB100;
+}
+.achievement:nth-child(odd) .achievement__number {
+  color: #7743DB;
+}
+.achievement:nth-child(even) {
+  border-top: 0.5rem solid #7743DB;
+}
+.achievement:nth-child(even) .achievement__number {
+  color: #FFB100;
+}
+.achievement:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.achievement__title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+.achievement__number {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /*# sourceMappingURL=app.css.map */
