@@ -16,7 +16,7 @@ const Achievements = () => {
   );
 
   return (
-    <div className="achievements">
+    <div className="achievements" id="achievements">
       <h2 className="achievements__heading">My Achievements</h2>
       <div className="achievements__grid">
         <Achievement
