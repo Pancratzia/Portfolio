@@ -1,16 +1,21 @@
-
 import useFetch from "../hooks/useFetch";
 import { Achievement } from "./Achievement";
 
-
-
 const Achievements = () => {
-  const { data: reposData, loading: loadingData, error : errorData } = useFetch(
+  const {
+    data: reposData,
+    loading: loadingData,
+    error: errorData,
+  } = useFetch(
     "https://api.github.com/users/pancratzia/repos",
     import.meta.env.VITE_GITHUB_API_KEY
   );
 
-  const { data: memberData, loading: loadingMember, error : errorMember } = useFetch(
+  const {
+    data: memberData,
+    loading: loadingMember,
+    error: errorMember,
+  } = useFetch(
     "https://api.github.com/users/pancratzia",
     import.meta.env.VITE_GITHUB_API_KEY
   );
@@ -40,6 +45,14 @@ const Achievements = () => {
           loading={false}
           data={null}
           number="+20"
+          error={null}
+        />
+
+        <Achievement
+          title="Successful Jobs"
+          loading={false}
+          data={null}
+          number="+5"
           error={null}
         />
       </div>

@@ -8,6 +8,7 @@ const About = () => {
             className="about__image"
             src="img/personal/profile.png"
             alt="About"
+            loading="lazy"
           />
         </div>
 
