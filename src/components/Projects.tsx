@@ -4,13 +4,16 @@ interface Props {
   description: string;
   github: string;
   demo: string;
+  demoUser: string;
+  demoPass: string;
+  tags?: string[];
 }
 
 export const Project = (props: Props) => {
-  const { title, image, description, github, demo } = props;
+  const { title, image, description, github, demo, demoUser, demoPass, tags } =
+    props;
   return (
     <div className="project">
-      <h3 className="project__title">{title}</h3>
       <picture>
         <source srcSet={`img/projects/${image}.avif`} type="image/avif" />
         <source srcSet={`img/projects/${image}.webp`} type="image/webp" />
@@ -25,25 +28,46 @@ export const Project = (props: Props) => {
           loading="lazy"
         />
       </picture>
-      <p className="project__description">{description}</p>
 
-      <div className="project__links">
-        <a
-          className="project__link"
-          href={github}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fab fa-github-square"></i>
-        </a>
-        <a
-          className="project__link"
-          href={demo}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fa fa-external-link"></i>
-        </a>
+      <div className="project__info">
+        <h3 className="project__title">{title}</h3>
+
+        <p className="project__description">{description}</p>
+
+        <div className="project__links">
+          <a
+            className="project__link"
+            href={github}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-github-square"></i>
+          </a>
+          <a
+            className="project__link"
+            href={demo}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa fa-eye"></i>
+          </a>
+        </div>
+
+        <div className="project__info-demo">
+          <p className="project__demo-user">User: <span>{demoUser}</span></p>
+          <p className="project__demo-pass">Password: <span>{demoPass}</span></p>
+        </div>
+      </div>
+
+      <div className="project__footer">
+        <div className="project__tags">
+          {tags &&
+            tags.map((tag, index) => (
+              <p key={index} className="project__tag">
+                {tag}
+              </p>
+            ))}
+        </div>
       </div>
     </div>
   );
@@ -51,11 +75,15 @@ export const Project = (props: Props) => {
 
 const PROJECTS = [
   {
-    title: "Project 1",
+    title: "Bienes Raices",
     image: "project1",
-    description: "Project 1 description",
+    description:
+      "Website for a real estate agency where a listing of properties for sale is displayed, along with details for each of them. It includes an Administration Panel to manage information related to properties, sellers, and blog posts",
     github: "https://github.com",
-    demo: "https://github.com", 
+    demo: "https://github.com",
+    demoUser: "Admin",
+    demoPass: "Admin",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "Admin"],
   },
   {
     title: "Project 2",
@@ -63,6 +91,8 @@ const PROJECTS = [
     description: "Project 2 description",
     github: "https://github.com",
     demo: "https://github.com",
+    demoUser: "Admin",
+    demoPass: "Admin",
   },
   {
     title: "Project 3",
@@ -70,6 +100,8 @@ const PROJECTS = [
     description: "Project 3 description",
     github: "https://github.com",
     demo: "https://github.com",
+    demoUser: "Admin",
+    demoPass: "Admin",
   },
   {
     title: "Project 4",
@@ -77,8 +109,10 @@ const PROJECTS = [
     description: "Project 4 description",
     github: "https://github.com",
     demo: "https://github.com",
-  }
-]
+    demoUser: "Admin",
+    demoPass: "Admin",
+  },
+];
 
 const Projects = () => {
   return (
@@ -93,6 +127,9 @@ const Projects = () => {
             description={project.description}
             github={project.github}
             demo={project.demo}
+            demoUser={project.demoUser}
+            demoPass={project.demoPass}
+            tags={project.tags}
           />
         ))}
       </div>

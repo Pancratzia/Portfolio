@@ -1,33 +1,112 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
 
-.projects{
+.projects {
+  margin: 3rem auto;
 
-    margin: 3rem auto;
+  &__heading {
+    @include m.heading;
+  }
 
+  &__grid {
+    @include m.container;
+    @include m.grid(1, 2rem);
 
-    &__heading{
-        @include m.heading;
+    @include m.tablet {
+      @include m.grid(2, 2rem);
     }
-
-    &__grid{
-        @include m.container;
-        @include m.grid(1, 2rem);
-
-        @include m.tablet{
-            @include m.grid(2, 2rem);
-        }
-
-        @include m.desktop{
-            @include m.grid(3, 2rem);
-        }
-
-        @include m.desktopXL{
-            @include m.grid(4, 2rem);
-        }
-    }
+  }
 }
 
-.project{
-    @include m.card;
+.project {
+  @include m.card;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @include m.tablet {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__image {
+    border-radius: 0.5rem;
+    border: 0.2rem solid transparent;
+    transition: border-color 0.3s;
+    object-fit: cover;
+
+    &:hover {
+      border-color: v.$purple;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: v.$fontTitillium;
+    letter-spacing: 0.2rem;
+    font-weight: v.$black;
+    text-wrap: wrap;
+    font-size: 2.4rem;
+    background-image: linear-gradient(
+      to bottom right,
+      #7743db,
+      #966ee3,
+      #ffb100 85%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  &__description {
+    margin: 1rem 0;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    color: v.$purple;
+    transition: color 0.3s;
+    margin: 1rem 0;
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &:hover {
+      color: lighten(v.$purple, 10%);
+    }
+  }
+
+  &__info-demo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    span {
+      color: v.$purple;
+    }
+  }
+
+  &__footer {
+    grid-column: 1 / 3;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
