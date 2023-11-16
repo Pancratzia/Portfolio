@@ -532,6 +532,7 @@ ul {
 @media (min-width: 768px) {
   .project {
     grid-template-columns: 1fr 2fr;
+    align-items: center;
   }
 }
 .project__image {

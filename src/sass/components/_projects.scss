@@ -27,6 +27,7 @@
 
   @include m.tablet {
     grid-template-columns: 1fr 2fr;
+    align-items: center;
   }
 
   &__image {
