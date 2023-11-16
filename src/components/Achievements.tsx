@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 import { Achievement } from "./Achievement";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { ANIMATIONS } from "../data/consts";
+import { ANIMATIONS } from "../data/data";
 import { random } from "../utils/functions";
 
 const Achievements = () => {
