@@ -115,11 +115,12 @@ const PROJECTS = [
   {
     title: "PankraCamp",
     image: "project4",
-    description: "Project 4 description",
+    description: "Project for a two-day event featuring conferences and workshops. It includes an administrative area to manage event information and a user registration system for attendees. Attendees can purchase three types of tickets and make payments through PayPal (The project is a demo, so it is using a PayPal sandbox account).",
     github: "https://github.com/Pancratzia/Web-Development-Repository/tree/main/09-PankraCamp",
     demo: "https://fahbelo.domcloud.io/",
-    demoUser: "Admin",
-    demoPass: "Admin",
+    demoUser: "test@admin.com - test@user.com",
+    demoPass: "123456",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "PHPMailer", "Admin", "DOMCloud", "PayPal"],
   },
 ];
 
