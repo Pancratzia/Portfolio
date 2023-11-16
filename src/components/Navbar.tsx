@@ -9,8 +9,8 @@ const Navbar = () => {
     { text: "About Me", href: "#about" },
     { text: "Achievements", href: "#achievements" },
     { text: "Skills", href: "#skills" },
-    { text: "Projects", href: "#" },
-    { text: "Contact", href: "#" },
+    { text: "Projects", href: "#projects" },
+    { text: "Contact", href: "#contact" },
   ];
 
   const handleClick = () => {

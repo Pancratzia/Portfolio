@@ -1,13 +1,4 @@
-import Aos from "aos";
-import { useEffect } from "react";
-import { random } from "../utils/functions";
-import { ANIMATIONS } from "../data/consts";
-
 const About = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   return (
     <div className="about" id="about">
       <h2 className="about__heading">About Me</h2>
@@ -29,7 +20,7 @@ const About = () => {
           </picture>
         </div>
 
-        <div className="about__info" data-aos={random(ANIMATIONS)}>
+        <div className="about__info">
           <p className="about__description">
             As a <span className="about__keyword">FullStack Developer</span>, I
             am driven by an unwavering passion for{" "}

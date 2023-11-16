@@ -1,3 +1,9 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { ANIMATIONS } from "../data/consts";
+import { random } from "../utils/functions";
+import { useEffect } from "react";
+
 interface Props {
   title: string;
   image: string;
@@ -7,13 +13,14 @@ interface Props {
   demoUser: string;
   demoPass: string;
   tags?: string[];
+  aos?: string;
 }
 
 export const Project = (props: Props) => {
-  const { title, image, description, github, demo, demoUser, demoPass, tags } =
+  const { title, image, description, github, demo, demoUser, demoPass, tags, aos } =
     props;
   return (
-    <div className="project">
+    <div className="project" data-aos={aos}>
       <picture>
         <source srcSet={`img/projects/${image}.avif`} type="image/avif" />
         <source srcSet={`img/projects/${image}.webp`} type="image/webp" />
@@ -79,10 +86,10 @@ const PROJECTS = [
     image: "project1",
     description:
       "Website for a real estate agency where a listing of properties for sale is displayed, along with details for each of them. It includes an Administration Panel to manage information related to properties, sellers, and blog posts",
-    github: "https://github.com",
-    demo: "https://github.com",
-    demoUser: "Admin",
-    demoPass: "Admin",
+    github: "https://github.com/Pancratzia/Web-Development-Repository/tree/main/06-BienesRaicesMVC",
+    demo: "https://pancratzia-bienesraices.000webhostapp.com/",
+    demoUser: "test@admin.com",
+    demoPass: "admin",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "Admin"],
   },
   {
@@ -115,8 +122,14 @@ const PROJECTS = [
 ];
 
 const Projects = () => {
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
+
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h2 className="projects__heading">My Projects</h2>
       <div className="projects__grid">
         {PROJECTS.map((project, index) => (
@@ -130,6 +143,7 @@ const Projects = () => {
             demoUser={project.demoUser}
             demoPass={project.demoPass}
             tags={project.tags}
+            aos={random(ANIMATIONS)}
           />
         ))}
       </div>
