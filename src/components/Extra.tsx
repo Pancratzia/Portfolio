@@ -1,12 +1,27 @@
-import { EXTRA_PROJECTS } from "../data/data";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { ANIMATIONS, EXTRA_PROJECTS } from "../data/data";
+import { useEffect } from "react";
+import { random } from "../utils/functions";
 
 const Extra = () => {
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="extra">
       <h2 className="extra__heading--extra">Extra Projects</h2>
       <div className="extra__grid">
         {EXTRA_PROJECTS.map((project, index) => (
-          <a className="extra__project" href={project.link} key={index} target="_blank">
+          <a
+            className="extra__project"
+            href={project.link}
+            key={index}
+            target="_blank"
+            data-aos={random(ANIMATIONS)}
+          >
             <h3 className="extra__title">{project.title}</h3>
 
             <p className="extra__description">{project.description}</p>
