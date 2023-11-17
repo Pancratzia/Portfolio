@@ -1,14 +1,124 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
 
-.contact{
-    margin: 3rem auto;
+.contact {
+  margin: 3rem auto;
 
-    &__heading{
-        @include m.heading;
+  &__heading {
+    @include m.heading;
+  }
+
+  &__form {
+    @include m.container-sm;
+    @include m.card;
+  }
+
+  &__legend {
+    text-transform: uppercase;
+    font-weight: v.$bold;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, v.$purple, v.$yellow);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 2rem 0;
+    font-size: 2rem;
+  
+
+    &--fieldset {
+      @extend .contact__legend;
+      text-align: left;
+      color: lighten(v.$purple, 10%);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__fieldset{
+    border: .1rem solid lighten(v.$purple, 10%);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      gap: 1rem;
+
+      @include m.tablet {
+        flex-direction: row;
+        
+      align-items: center;
+      }
+
+      &--textarea {
+        @extend .contact__field;
+
+        @include m.tablet {
+            align-items: flex-start;
+        }
+      }
+  }
+
+  &__label {
+    font-weight: v.$bold;
+  }
+
+  &__input, &__textarea {
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: v.$fontOpenSans;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 10rem;
+  }
+
+  &__actions{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include m.tablet {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__submit{
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    font-family: v.$fontOpenSans;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    background-color: v.$purple;
+    color: v.$white;
+    font-weight: v.$bold;
+    transition: background-color 0.3s;
+
+    &:hover{
+      cursor: pointer;
+      background-color: lighten(v.$purple, 10%);
     }
 
-    &__form{
-        @include m.container-sm;
+    &--reset{
+      @extend .contact__submit;
+
+      background-color: v.$yellow;
+
+      &:hover{
+        background-color: lighten(v.$yellow, 10%);
+      }
     }
+  }
 }

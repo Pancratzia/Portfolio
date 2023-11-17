@@ -637,6 +637,101 @@ ul {
   width: 80%;
   max-width: 90rem;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.contact__legend, .contact__legend--fieldset {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #7743DB, #FFB100);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.contact__legend--fieldset {
+  text-align: left;
+  color: #966ee3;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.contact__fieldset {
+  border: 0.1rem solid #966ee3;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.contact__field, .contact__field--textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .contact__field, .contact__field--textarea {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .contact__field--textarea {
+    align-items: flex-start;
+  }
+}
+.contact__label {
+  font-weight: 700;
+}
+.contact__input, .contact__textarea {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.contact__textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+.contact__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .contact__actions {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+.contact__submit, .contact__submit--reset {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: #7743DB;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+.contact__submit:hover, .contact__submit--reset:hover {
+  cursor: pointer;
+  background-color: #966ee3;
+}
+.contact__submit--reset {
+  background-color: #FFB100;
+}
+.contact__submit--reset:hover {
+  background-color: #ffc133;
 }
 
 .footer {
