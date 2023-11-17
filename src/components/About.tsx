@@ -52,6 +52,13 @@ const About = () => {
           </p>
         </div>
       </div>
+
+      <footer className="about__footer">
+        <p className="about__footer-text">
+          Do you want to know more about me? <a href="#" className="about__footer-link">Read my CV!</a>
+        </p>
+      </footer>
+
     </div>
   );
 };

@@ -300,6 +300,21 @@ ul {
   text-transform: uppercase;
   font-weight: 700;
 }
+.about__footer {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #16092f;
+  padding: 2rem;
+}
+.about__footer-text {
+  font-weight: 700;
+  color: #fff;
+}
+.about__footer-link {
+  display: inline-block;
+  margin: 0 0 0 1rem;
+  color: #FFB100;
+}
 
 .achievements {
   margin: 3rem auto;

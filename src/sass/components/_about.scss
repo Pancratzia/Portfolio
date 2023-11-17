@@ -57,4 +57,22 @@
   &__keyword{
     @include m.keyword;
   }
+
+  &__footer{
+    margin-top: 3rem;
+    text-align: center;
+    background-color: darken(v.$purple, 45%);
+    padding: 2rem;
+  }
+
+  &__footer-text{
+    font-weight: v.$bold;
+    color: v.$white;
+  }
+
+  &__footer-link{
+    display: inline-block;
+    margin: 0 0 0 1rem;
+    color: v.$yellow;
+  }
 }
