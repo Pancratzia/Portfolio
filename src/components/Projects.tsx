@@ -4,6 +4,7 @@ import { ANIMATIONS, PROJECTS } from "../data/data";
 import { random } from "../utils/functions";
 import { useEffect } from "react";
 import { Project } from "./Project";
+import Extra from "./Extra";
 
 const Projects = () => {
 
@@ -13,6 +14,7 @@ const Projects = () => {
 
 
   return (
+    <>
     <div className="projects" id="projects">
       <h2 className="projects__heading">My Projects</h2>
       <div className="projects__grid">
@@ -32,6 +34,9 @@ const Projects = () => {
         ))}
       </div>
     </div>
+
+    <Extra />
+    </>
   );
 };
 

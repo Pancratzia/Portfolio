@@ -45,3 +45,18 @@ export const PROJECTS = [
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "PHPMailer", "Admin", "DOMCloud", "PayPal"],
     },
   ];
+
+  export const EXTRA_PROJECTS = [
+    {
+      title: "Weather App",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam deleniti iste sequi. Impedit illum, laudantium sunt iure harum natus perferendis dicta esse commodi. Numquam modi et in dicta, vel delectus reiciendis aperiam porro provident culpa? Tempore, culpa sequi? Hic iste voluptatem animi! Nisi laborum at illo suscipit? Commodi.",
+      link: "https://github.com/Pancratzia/Web-Development-Repository/tree/main/10-WeatherApp",
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "DOMCloud"],
+    },
+    {
+      title: "Other App",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat totam deleniti iste sequi. Impedit illum, laudantium sunt iure harum natus perferendis dicta esse commodi. Numquam modi et in dicta, vel delectus reiciendis aperiam porro provident culpa? Tempore, culpa sequi? Hic iste voluptatem animi! Nisi laborum at illo suscipit? Commodi.",
+      link: "https://github.com/Pancratzia/Web-Development-Repository/tree/main/10-WeatherApp",
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "DOMCloud"],
+    }
+  ]
