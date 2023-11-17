@@ -19,56 +19,52 @@
     }
   }
 
-  &__grid {
+  &__grid{
     @include m.container;
-    @include m.grid(1, 2rem);
-
-    @include m.tablet {
-      @include m.grid(2, 2rem);
-    }
   }
+
 
   &__project {
     @include m.card;
+    text-align: center;
     border: .5rem solid transparent;
     border-top: 0.5rem solid v.$yellow;
     transition: border-color 0.3s;
-
-    &:hover{
-        border-color: v.$yellow
-    }
-
-    &:focus-visible{
-      outline: none;
-    }
-
-    &:active{
-      color: #551A8B;
-    }
-
   }
 
-
-  &__title {
+  &__title{
     text-transform: uppercase;
     font-family: v.$fontTitillium;
-    letter-spacing: 0.1rem;
-    text-wrap: wrap;
+    letter-spacing: 0.2rem;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
     color: v.$purple;
+    font-weight: v.$black;
+
+    border-bottom: .3rem solid v.$yellow;
   }
 
+  &__link{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: v.$purple;
+    transition: color 0.3s;
 
-  &__description {
-    margin: 1rem 0;
-    line-height: 1.6;
+    &:hover{
+      color: lighten(v.$purple, 20%);
+    }
+
   }
 
-  &__footer {
-    grid-column: 1 / 3;
+  &__description{
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
 
   &__tags {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
@@ -93,4 +89,13 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+}
+
+.swiper-wrapper{
+  box-sizing: inherit !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: v.$purple !important;
+  opacity: .5 !important;
 }

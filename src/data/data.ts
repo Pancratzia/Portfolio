@@ -94,9 +94,9 @@ export const EXTRA_PROJECTS = [
   {
     title: "Personal Portfolio",
     description:
-      "My personal portfolio is built with React, TypeScript, and SASS. It utilizes Vite for fast development and AOS library for animations. The project is hosted on Netlify, and its code is available on GitHub. The contact form integrates FetchAPI and GitHub API to showcase achievements.",
+      "My personal portfolio is built with React, TypeScript, and SASS. It utilizes Vite for fast development, AOS library for animations and SwiperJS to create sliders. The project is hosted on Netlify, and its code is available on GitHub. The contact form integrates FetchAPI and GitHub API to showcase achievements.",
     link: "https://github.com/Pancratzia/Portfolio",
-    tags: ["HTML", "JavaScript", "GitHub", "React", "TypeScript", "SASS", "AOS", "Netlify"],
+    tags: ["HTML", "JavaScript", "GitHub", "React", "TypeScript", "SASS", "AOS", "SwiperJS", "Netlify"],
   },
   {
     title: "Web Development Repository",
