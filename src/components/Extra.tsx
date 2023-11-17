@@ -3,21 +3,12 @@ import { EXTRA_PROJECTS } from "../data/data";
 const Extra = () => {
   return (
     <div className="extra">
-      <h2 className="extra__heading">Extra Projects</h2>
+      <h2 className="extra__heading--extra">Extra Projects</h2>
       <div className="extra__grid">
         {EXTRA_PROJECTS.map((project, index) => (
-          <div className="extra__project" key={index}>
-            <div className="extra__header">
-              <h3 className="extra__title">{project.title}</h3>
-              <a
-                className="extra__link"
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fa fa-eye"></i>
-              </a>
-            </div>
+          <a className="extra__project" href={project.link} key={index} target="_blank">
+            <h3 className="extra__title">{project.title}</h3>
+
             <p className="extra__description">{project.description}</p>
 
             <div className="extra__footer">
@@ -30,7 +21,7 @@ const Extra = () => {
                   ))}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

@@ -610,7 +610,7 @@ ul {
 .extra {
   margin: 3rem auto;
 }
-.extra__heading {
+.extra__heading, .extra__heading--extra {
   text-align: center;
   margin: 3rem 0;
   font-size: clamp(3rem, 6vw, 6rem);
@@ -620,7 +620,7 @@ ul {
   letter-spacing: 0.5rem;
   text-transform: uppercase;
 }
-.extra__heading::after {
+.extra__heading::after, .extra__heading--extra::after {
   content: "• • •";
   display: block;
   color: #FFB100;
@@ -629,9 +629,17 @@ ul {
   padding: 0;
 }
 @media (min-width: 768px) {
-  .extra__heading::after {
+  .extra__heading::after, .extra__heading--extra::after {
     margin-top: -2rem;
   }
+}
+.extra__heading--extra {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  opacity: 0.8;
+}
+.extra__heading--extra::after {
+  color: #7743DB;
+  opacity: 0.8;
 }
 .extra__grid {
   width: 90%;
@@ -648,24 +656,23 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1024px) {
-  .extra__grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .extra__project {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem;
   border-radius: 0.8rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border: 0.5rem solid transparent;
+  border-top: 0.5rem solid #FFB100;
+  transition: border-color 0.3s;
 }
-.extra__header {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 1rem;
+.extra__project:hover {
+  border-color: #FFB100;
+}
+.extra__project:focus-visible {
+  outline: none;
+}
+.extra__project:active {
+  color: #551A8B;
 }
 .extra__title {
   text-transform: uppercase;
@@ -673,13 +680,6 @@ ul {
   letter-spacing: 0.1rem;
   text-wrap: wrap;
   color: #7743DB;
-}
-.extra__link {
-  color: #7743DB;
-  transition: color 0.3s;
-}
-.extra__link:hover {
-  color: #5c26c5;
 }
 .extra__description {
   margin: 1rem 0;
