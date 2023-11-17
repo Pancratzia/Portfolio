@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="contact" id="contact">
+    <section className="contact" id="contact">
       <h2 className="contact__heading">Contact Me</h2>
       <form className="contact__form">
         <legend className="contact__legend">
@@ -62,7 +62,7 @@ const Contact = () => {
           <input className="contact__submit" type="submit" value="Submit" />
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

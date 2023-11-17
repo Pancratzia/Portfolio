@@ -30,7 +30,7 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="achievements" id="achievements">
+    <section className="achievements" id="achievements">
       <h2 className="achievements__heading">My Achievements</h2>
       <div className="achievements__grid">
         <Achievement
@@ -69,7 +69,7 @@ const Achievements = () => {
           aos={random(ANIMATIONS)}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

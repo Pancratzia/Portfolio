@@ -23,7 +23,7 @@ export const Project = (props: Props) => {
     aos,
   } = props;
   return (
-    <div className="project" data-aos={aos}>
+    <article className="project" data-aos={aos}>
       <picture>
         <source srcSet={`img/projects/${image}.avif`} type="image/avif" />
         <source srcSet={`img/projects/${image}.webp`} type="image/webp" />
@@ -83,6 +83,6 @@ export const Project = (props: Props) => {
             ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 };

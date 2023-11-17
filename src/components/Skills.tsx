@@ -65,12 +65,12 @@ function Skills() {
   }, []);
 
   return (
-    <div className="skills" id="skills">
+    <section className="skills" id="skills">
       <h2 className="skills__heading">My Skills</h2>
       <div className="skills__grid">
         <div className="skills__icons" ref={iconsContainerRef}></div>
       </div>
-    </div>
+    </section>
   );
 }
 

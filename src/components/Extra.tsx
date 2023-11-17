@@ -11,7 +11,7 @@ const Extra = () => {
   }, []);
 
   return (
-    <div className="extra">
+    <section className="extra">
       <h2 className="extra__heading--extra">Extra Projects</h2>
       <div className="extra__grid">
         {EXTRA_PROJECTS.map((project, index) => (
@@ -39,7 +39,7 @@ const Extra = () => {
           </a>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

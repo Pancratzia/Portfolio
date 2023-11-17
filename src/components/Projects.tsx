@@ -15,7 +15,7 @@ const Projects = () => {
 
   return (
     <>
-    <div className="projects" id="projects">
+    <main className="projects" id="projects">
       <h2 className="projects__heading">My Projects</h2>
       <div className="projects__grid">
         {PROJECTS.map((project, index) => (
@@ -33,7 +33,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </div>
+    </main>
 
     <Extra />
     </>
