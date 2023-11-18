@@ -11,10 +11,13 @@
     "sass": "sass src/sass:src/css --watch"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@types/aos": "^3.0.7",
     "aos": "^2.3.4",
+    "email-js": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sweetalert2": "^11.10.0",
     "swiper": "^11.0.4"
   },
   "devDependencies": {

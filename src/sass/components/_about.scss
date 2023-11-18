@@ -61,7 +61,7 @@
   &__footer{
     margin-top: 3rem;
     text-align: center;
-    background-color: darken(v.$purple, 45%);
+    background-color: rgba(darken(v.$purple, 45%), .6);
     padding: 2rem;
   }
 

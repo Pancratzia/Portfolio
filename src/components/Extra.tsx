@@ -34,7 +34,7 @@ const Extra = () => {
             <SwiperSlide key={index} className="extra__project">
              <h3 className="extra__title">{project.title}</h3>
              <a className="extra__link" href={project.link} target="_blank">
-                <i className="extra__icon fa fa-eye"></i>
+                <i className="extra__icon fa fa-external-link"></i>
               </a>
 
                 <p className="extra__description">{project.description}</p>

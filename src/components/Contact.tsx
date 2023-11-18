@@ -1,8 +1,44 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 const Contact = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e : any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result: any) => {
+          Swal.fire({
+            title: "Email sent!",
+            text: "Thank you for reaching out. I'll get back to you as soon as possible.",
+            icon: "success",
+          });
+
+          form.current?.reset();
+        },
+        (error: any) => {
+          Swal.fire({
+            title: "Error!",
+            text: "Something went wrong. Please try again later.",
+            icon: "error",
+          });
+        }
+      );
+  };
+
   return (
     <section className="contact" id="contact">
       <h2 className="contact__heading">Contact Me</h2>
-      <form className="contact__form">
+      <form className="contact__form" ref={form} onSubmit={sendEmail}>
         <legend className="contact__legend">
           Want to get in touch? Fill out the form below and I will get back to
           you as soon as possible.

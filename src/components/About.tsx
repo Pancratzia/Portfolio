@@ -55,7 +55,7 @@ const About = () => {
 
       <footer className="about__footer">
         <p className="about__footer-text">
-          Do you want to know more about me? <a href="#" className="about__footer-link">Read my CV!</a>
+          Do you want to know more about me? <a href="#" target="_blank" className="about__footer-link">Read my CV!</a>
         </p>
       </footer>
 

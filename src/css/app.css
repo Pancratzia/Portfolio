@@ -303,7 +303,7 @@ ul {
 .about__footer {
   margin-top: 3rem;
   text-align: center;
-  background-color: #16092f;
+  background-color: rgba(22, 9, 47, 0.6);
   padding: 2rem;
 }
 .about__footer-text {
@@ -691,6 +691,9 @@ ul {
 .extra__link:hover {
   color: #b599eb;
 }
+.extra__link svg {
+  font-size: 2.6rem;
+}
 .extra__description {
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -761,13 +764,7 @@ ul {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  background-image: linear-gradient(to bottom right, #7743DB, #FFB100);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #7743DB;
   margin: 2rem 0;
   font-size: 2rem;
 }

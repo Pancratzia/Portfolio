@@ -17,13 +17,7 @@
     text-transform: uppercase;
     font-weight: v.$bold;
     text-align: center;
-    background-image: linear-gradient(to bottom right, v.$purple, v.$yellow);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: v.$purple;
     margin: 2rem 0;
     font-size: 2rem;
   
