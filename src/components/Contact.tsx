@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e : any) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs
@@ -17,15 +17,18 @@ const Contact = () => {
       )
       .then(
         (result: any) => {
-          Swal.fire({
-            title: "Email sent!",
-            text: "Thank you for reaching out. I'll get back to you as soon as possible.",
-            icon: "success",
-          });
+          if (result.text === "OK") {
+            Swal.fire({
+              title: "Email sent!",
+              text: "Thank you for reaching out. I'll get back to you as soon as possible.",
+              icon: "success",
+            });
+          }
 
           form.current?.reset();
         },
         (error: any) => {
+          console.log(error.text);
           Swal.fire({
             title: "Error!",
             text: "Something went wrong. Please try again later.",
