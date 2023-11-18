@@ -314,6 +314,10 @@ ul {
   display: inline-block;
   margin: 0 0 0 1rem;
   color: #FFB100;
+  transition: color 0.3s;
+}
+.about__footer-link:hover {
+  color: #cc8e00;
 }
 
 .achievements {
