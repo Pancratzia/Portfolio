@@ -9,8 +9,17 @@
   }
 
   &__form {
-    @include m.container-sm;
+    @include m.container;
     @include m.card;
+    transition: all 0.3s;
+
+    @include m.tablet {
+      @include m.container-md;
+    }
+
+    @include m.desktop {
+      @include m.container-sm;
+    }
   }
 
   &__legend {
