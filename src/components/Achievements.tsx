@@ -61,7 +61,7 @@ const Achievements = () => {
         />
 
         <Achievement
-          title="Successful Jobs"
+          title="Successful Works"
           loading={false}
           data={null}
           number="+5"
