@@ -15,6 +15,7 @@
     "@types/aos": "^3.0.7",
     "aos": "^2.3.4",
     "email-js": "^2.0.2",
+    "email-validator": "^2.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sweetalert2": "^11.10.0",

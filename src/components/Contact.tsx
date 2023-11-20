@@ -1,47 +1,69 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import validator from "email-validator";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
+    const { name, email, message } = e.target;
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result: any) => {
-          if (result.text === "OK") {
+    if (!name.value || !email.value || !message.value) {
+      Swal.fire({
+        title: "Error!",
+        text: "Please fill in all the fields.",
+        icon: "error",
+      });
+      return;
+    } else if (!validator.validate(email.value)) {
+      Swal.fire({
+        title: "Error!",
+        text: "Please enter a valid email address.",
+        icon: "error",
+      });
+      return;
+    } else {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          e.target,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result: any) => {
+            if (result.text === "OK") {
+              Swal.fire({
+                title: "Email sent!",
+                text: "Thank you for reaching out. I'll get back to you as soon as possible.",
+                icon: "success",
+              });
+            }
+
+            form.current?.reset();
+          },
+          (error: any) => {
+            console.log(error.text);
             Swal.fire({
-              title: "Email sent!",
-              text: "Thank you for reaching out. I'll get back to you as soon as possible.",
-              icon: "success",
+              title: "Error!",
+              text: "Something went wrong. Please try again later.",
+              icon: "error",
             });
           }
-
-          form.current?.reset();
-        },
-        (error: any) => {
-          console.log(error.text);
-          Swal.fire({
-            title: "Error!",
-            text: "Something went wrong. Please try again later.",
-            icon: "error",
-          });
-        }
-      );
+        );
+    }
   };
 
   return (
     <section className="contact" id="contact">
       <h2 className="contact__heading">Contact Me</h2>
-      <form className="contact__form" ref={form} onSubmit={sendEmail}>
+      <form
+        className="contact__form"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <legend className="contact__legend">
           Want to get in touch? Fill out the form below and I will get back to
           you as soon as possible.
