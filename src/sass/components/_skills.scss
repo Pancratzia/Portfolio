@@ -11,6 +11,7 @@
   &__grid {
     @include m.container-sm;
     @include m.card;
+    padding: 0;
     border-top: .5rem solid v.$purple;
     border-bottom: .5rem solid v.$yellow;
     border-right: .5rem solid v.$yellow;
