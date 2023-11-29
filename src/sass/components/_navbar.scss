@@ -53,30 +53,27 @@
     align-items: center;
     height: 0;
     opacity: 0;
+    transition: all 0.3s;
+    overflow: hidden;
 
     &.close {
-      height: 100%;
+      max-height: 100rem;
+      height: 30rem;
       opacity: 1;
-
-      .navbar__link {
-        opacity: 1;
-        display: block;
-      }
+      transition: all 0.3s;
     }
 
     &.open {
-      height: 0;
-
-      .navbar__link {
-        opacity: 0;
-        display: none;
-      }
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.3s;
     }
 
     @include m.tablet {
       flex-direction: row;
       gap: 2rem;
-      height: 100% !important;
+      height: auto !important;
+      max-height: 100rem !important;
       opacity: 1 !important;
 
       .navbar__link {
