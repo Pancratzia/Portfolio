@@ -4,8 +4,8 @@ interface Props {
   description: string;
   github: string;
   demo: string;
-  demoUser: string;
-  demoPass: string;
+  demoUser?: string;
+  demoPass?: string;
   tags?: string[];
   aos?: string;
 }
