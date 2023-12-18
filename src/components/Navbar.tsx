@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
       <div className={isOpen ? "navbar__links open" : "navbar__links close"}>
         {navbarLinks.map((link, index) => (
-          <a key={index} onClick={(e) => smoothScrollTo(e, link.href)} className={`navbar__link`}>
+          <a href={link.href} key={index} onClick={(e) => smoothScrollTo(e, link.href)} className={`navbar__link`}>
             {link.text}
           </a>
         ))}

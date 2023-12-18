@@ -88,6 +88,15 @@ export const PROJECTS = [
       "PayPal",
     ],
   },
+  {
+    title: "Landing Page - Dra. Yuleima Pérez",
+    image: "project5",
+    description:
+    "Landing Page for a ginecobstetrician. It's main purpose is to showcase the doctors social media accounts, her services and her contact number. The project is hosted on Vercel and it's correctly indexed in Google Search.",
+    github: "https://github.com/ARLA-Dev/drayuleimaperez",
+    demo: "https://www.drayuleimaperez.com/",
+    tags: ["HTML", "CSS", "JavaScript", "AOS", "SwiperJS", "Vercel", "Google Search", "Landing Page", "SEO", "Google Search", "Leaflet"],
+  }
 ];
 
 export const EXTRA_PROJECTS = [

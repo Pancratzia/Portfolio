@@ -64,12 +64,17 @@ export const Project = (props: Props) => {
         </div>
 
         <div className="project__info-demo">
-          <p className="project__demo-user">
-            User: <span>{demoUser}</span>
-          </p>
-          <p className="project__demo-pass">
-            Password: <span>{demoPass}</span>
-          </p>
+          {demoUser && (
+            <p className="project__demo-user">
+              User: <span>{demoUser}</span>
+            </p>
+          )}
+
+          {demoPass && (
+            <p className="project__demo-pass">
+              Password: <span>{demoPass}</span>
+            </p>
+          )}
         </div>
       </div>
 
