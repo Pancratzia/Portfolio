@@ -33,7 +33,8 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Prepare static website
-        run: python scripts/build-pages.py --base-path '${{ steps.pages.outputs.base_path }}'
+        # Production uses www.pancratzia.com, where assets live at the root.
+        run: python scripts/build-pages.py
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
