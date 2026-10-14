@@ -1,0 +1,19 @@
+.not-found{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:40px;min-height:calc(100svh - 110px);padding:75px var(--outer-gutter) 90px;overflow:hidden;background:radial-gradient(ellipse at 85% 40%,#eee0fa 0,transparent 52%)}
+.not-found-copy{position:relative;z-index:2;max-width:660px}
+.not-found h1{font-size:clamp(46px,5.5vw,80px);line-height:1.06;letter-spacing:-2.5px;color:#644378;margin:24px 0}
+.not-found-copy>p{font-size:16px;line-height:1.9;max-width:500px;color:#80648e;margin-bottom:30px}
+.not-found .conversion-row{gap:14px;margin-top:0}
+.not-found .button{font-size:13px;gap:18px;min-height:50px}
+.lost-contact{display:inline-block;margin-top:26px;font-size:13px}
+.lost-cards{height:430px;position:relative;width:100%;max-width:480px;justify-self:center;isolation:isolate}
+.lost-orbit{position:absolute;inset:30px -25px;border:1px solid #d2b6e5;border-radius:50%;transform:rotate(-25deg)}
+.lost-card{position:absolute;display:grid;place-items:center;width:155px;height:235px;border:1px solid #caa9df;border-radius:18px;background:#fbf7fe;box-shadow:0 18px 40px #7950be12;font-family:var(--serif,Georgia,serif);font-size:120px;line-height:1;color:#8959b3;top:95px}
+.lost-four-a{left:1%;transform:rotate(-13deg);z-index:1}
+.lost-zero{left:calc(50% - 77px);transform:translateY(-34px);z-index:3;background:#7548ad;color:#fff;border-color:#7548ad;box-shadow:0 22px 45px #7548ad25}
+.lost-zero>svg{position:absolute;width:25px;height:25px;bottom:20px;right:20px;color:#e6d3f4}
+.lost-four-b{right:1%;transform:rotate(13deg);z-index:2;background:#f0e4fa}
+.lost-spark{position:absolute;color:#ac80c7;z-index:4}
+.spark-a{width:37px;height:37px;top:25px;right:32px}
+.spark-b{width:24px;height:24px;bottom:25px;left:48px;transform:rotate(18deg)}
+@media(max-width:1100px){.lost-card{width:128px;height:205px;font-size:105px}.lost-zero{left:calc(50% - 64px)}.lost-cards{height:370px}.lost-orbit{inset:35px -10px}.not-found{gap:25px}.not-found h1{font-size:60px}}
+@media(max-width:760px){.not-found{grid-template-columns:1fr;gap:10px;min-height:0;padding:45px 6% 65px;background:radial-gradient(ellipse at 50% 28%,#eee0fa 0,transparent 60%)}.lost-cards{grid-row:1;max-width:335px;height:280px}.lost-card{top:70px;width:115px;height:170px;font-size:90px;border-radius:14px}.lost-zero{left:calc(50% - 57px);transform:translateY(-22px)}.lost-orbit{inset:25px -5px}.lost-zero>svg{width:18px;height:18px;bottom:15px;right:15px}.spark-a{top:5px;right:25px;width:27px;height:27px}.spark-b{bottom:5px;left:30px;width:20px;height:20px}.not-found h1{font-size:clamp(42px,10vw,60px);letter-spacing:-1.7px;margin:20px 0}.not-found-copy>p{font-size:15px;margin-bottom:25px}.not-found .eyebrow{font-size:10px}.not-found .conversion-row{gap:12px}.lost-contact{margin-top:24px}}

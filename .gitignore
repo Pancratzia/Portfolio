@@ -24,3 +24,10 @@ dist-ssr
 *.sw?
 
 *.env
+
+# The current static website is versioned for GitHub Pages.
+!dist/
+!dist/**
+_site/
+__pycache__/
+*.pyc
