@@ -9,7 +9,8 @@ localized error pages, sitemap and robots.txt. It keeps unchanged sitemap dates.
 The production repository is `Pancratzia/Portfolio`, branch `main`.
 Choose **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 Every push to `main` runs `.github/workflows/pages.yml` and publishes `_site`.
-The workflow supports the default `/Portfolio/` URL and a custom domain.
+The production workflow builds for `www.pancratzia.com` with root asset URLs.
+The `/Portfolio/` base path is only for local checks of the default project URL.
 The older React/Vite files are retained for history and are not part of this
 workflow's build. Do not run their npm build to regenerate the current website.
 

@@ -9,7 +9,10 @@ GitHub repository. Every completed website change must be committed and pushed
 there so `.github/workflows/pages.yml` can publish it. Publishing in ChatGPT
 Sites alone is not completion of a request to update the GitHub Pages website.
 Use `python scripts/build-pages.py --base-path /Portfolio` to validate the
-preview URL, or no base path for the custom domain. Preserve existing GitHub
+preview URL, or no base path for the custom domain. The production workflow
+must run `python scripts/build-pages.py` without a base path because the custom
+domain serves assets at `/`; never deploy `/Portfolio/` asset URLs there.
+Preserve existing GitHub
 repository files outside the current `dist/`, scripts and deployment config.
 Never publish secrets, repository credentials or generated `_site` output.
 
