@@ -8,12 +8,16 @@
     "sha256": "25f9f3c094ec02e5ba712157c4f1d3db7712eb92ca0bbae1ac846db4d7c7107d"
   },
   "blog/index.html": {
-    "lastmod": "2026-10-13",
-    "sha256": "7c1abfe93908378aa1229c86205d6143eb31cab63c8bf102c2a0c72a9ad3d321"
+    "lastmod": "2026-10-14",
+    "sha256": "cfb982f62ccb20fc7e2e47717d2743c3c7038a07c458c84d2e20f59246be5741"
   },
   "blog/website-migration-checklist/index.html": {
     "lastmod": "2026-10-13",
     "sha256": "70ed2b2b14c553856213d03486ff43ba9580b1c6ebfcb5ffd9e245640f22657a"
+  },
+  "blog/wordpress-to-webflow-migration/index.html": {
+    "lastmod": "2026-10-14",
+    "sha256": "04bea62a7aa54ac25e09f5d0e119f497e2e45d1809b2e3ea714eb2f0d3bb05d3"
   },
   "contact/index.html": {
     "lastmod": "2026-10-13",
@@ -28,12 +32,16 @@
     "sha256": "7ccdcc01ce06e9550c45446ecf444cb7b3260885c33cc5331c5f73c71a982891"
   },
   "es/blog/index.html": {
-    "lastmod": "2026-10-13",
-    "sha256": "0063ab3c60352c094870a7260c08b398b7e0bafd43c4ed3500ae50a7a02b374e"
+    "lastmod": "2026-10-14",
+    "sha256": "4d373e74b282e02812ac3567ce75bed059f848eb18b2228b12cf9ac099841965"
   },
   "es/blog/website-migration-checklist/index.html": {
     "lastmod": "2026-10-13",
     "sha256": "e86110e0d46d5049bbcf25c58032f9efc15ce02e89073dbc0ceaf9a839ff30df"
+  },
+  "es/blog/wordpress-to-webflow-migration/index.html": {
+    "lastmod": "2026-10-14",
+    "sha256": "7add4dee6c806b5ac17d089891b146235b54f2eaf49d48413e5776755fe416d2"
   },
   "es/contact/index.html": {
     "lastmod": "2026-10-13",

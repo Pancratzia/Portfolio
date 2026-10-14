@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.pancratzia.com/blog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/blog/" />
@@ -21,6 +21,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/blog/website-migration-checklist/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/blog/website-migration-checklist/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/blog/website-migration-checklist/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/blog/wordpress-to-webflow-migration/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/blog/wordpress-to-webflow-migration/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/blog/wordpress-to-webflow-migration/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/blog/wordpress-to-webflow-migration/" />
   </url>
   <url>
     <loc>https://www.pancratzia.com/contact/</loc>
@@ -38,7 +45,7 @@
   </url>
   <url>
     <loc>https://www.pancratzia.com/es/blog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/blog/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/blog/" />
@@ -49,6 +56,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/blog/website-migration-checklist/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/blog/website-migration-checklist/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/blog/website-migration-checklist/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/es/blog/wordpress-to-webflow-migration/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/blog/wordpress-to-webflow-migration/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/blog/wordpress-to-webflow-migration/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/blog/wordpress-to-webflow-migration/" />
   </url>
   <url>
     <loc>https://www.pancratzia.com/es/contact/</loc>
