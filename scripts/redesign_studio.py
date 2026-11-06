@@ -14,7 +14,7 @@ COPY = {
   'intro':'Distinctive websites for brands with something to say. I design and build in Webflow, so your next big idea feels right—and works beautifully.',
   'chips':['Web design + development','CMS + migrations','English + Spanish'],
   'secondary':'Explore my work', 'note':'For brands, founders & creative agencies.',
-  'drag':'Drag to explore', 'gallery':'A few things I’ve brought to life',
+  'drag':'Drag to explore', 'gallery':'A few ways we can work together',
   'proof':['Designed with intention.','Built for real people.','Ready for your next chapter.'],
   'worktag':'01 / SELECTED WORK', 'worktitle':'Real projects.<br><em>Different kinds of magic.</em>',
   'workintro':'A closer look at the design, structure and care behind each build.', 'allwork':'All projects',
@@ -52,7 +52,7 @@ COPY = {
   'intro':'Sitios con personalidad para marcas que tienen algo que decir. Diseño y desarrollo en Webflow para que tu próxima gran idea se vea bien y funcione mejor.',
   'chips':['Diseño + desarrollo web','CMS + migraciones','Inglés + español'],
   'secondary':'Explorar mis proyectos', 'note':'Para marcas, emprendedores y agencias creativas.',
-  'drag':'Arrastra para explorar', 'gallery':'Ideas que ya se hicieron realidad',
+  'drag':'Arrastra para explorar', 'gallery':'Así podemos trabajar juntos',
   'proof':['Diseño con intención.','Pensado para personas.','Listo para tu próximo capítulo.'],
   'worktag':'01 / PROYECTOS DESTACADOS', 'worktitle':'Proyectos reales.<br><em>Distintas formas de hacer magia.</em>',
   'workintro':'El diseño, la estructura y los detalles detrás de cada sitio.', 'allwork':'Todos los proyectos',
@@ -111,10 +111,12 @@ def home(lang):
  chiproutes=['webflow-development','webflow-cms','localization']
  chips=''.join(f'<a href="{p}/services/{route}/">{label}{arrow()}</a>' for label,route in zip(c['chips'],chiproutes))
  cards=''
- for i in range(8):
-  slug,name,image,tag,estag=PROJECTS[i%4]
-  iw,ih=(540,360) if image=='joumana.png' else (1000,750)
-  cards+=f'<a class="s-reel" href="{p}/work/{slug}/" aria-label="{name}" data-ratio="{iw/ih}"><div class="s-reel-browser" aria-hidden="true"><span>● ● ●</span><span>{name}</span></div><img src="/assets/{image}" alt="{name} — {estag if es else tag}" width="{iw}" height="{ih}" loading="eager" draggable="false"><span class="s-reel-caption"><span>{name}</span>{arrow()}</span></a>'
+ service_cards=[('web-design','WEB DESIGN','Diseño web','design'),('webflow-development','WEBFLOW DEV','Desarrollo Webflow','code'),('webflow-cms','CMS + CONTENT','CMS + contenido','cms'),('localization','EN / ES','Inglés / español','language'),('seo-migrations','MIGRATIONS','Migraciones','move'),('website-rebuilds','REBUILDS','Rediseños','design'),('maintenance','WEBSITE CARE','Mantenimiento','care'),('ai-images','AI VISUALS','Imágenes IA','star')]
+ from services_studio import ascii_art
+ for i,(slug,en_label,es_label,kind) in enumerate(service_cards):
+  label=es_label if es else en_label
+  desc={'design':('Design with intention.','Diseño con intención.'),'code':('Made to work beautifully.','Desarrollo con cuidado.'),'cms':('Give your content a home.','Contenido en su lugar.'),'language':('Two languages. One brand.','Dos idiomas. Una marca.'),'move':('A carefully planned move.','Un cambio bien pensado.'),'care':('Keep moving forward.','Tu sitio sigue creciendo.'),'star':('Visuals with your direction.','Imágenes con tu dirección.')}[kind][int(es)]
+  cards+=f'<a class="s-reel s-service-reel" href="{p}/services/{slug}/" aria-label="{label}"><span class="s-reel-number">[ 0{i+1} / SERVICE ]</span><pre aria-hidden="true">{escape(ascii_art(kind))}</pre><div class="s-service-reel-copy"><h2>{label}</h2><p>{desc}</p><span>{"Explorar servicio" if es else "Explore service"} {arrow()}</span></div></a>'
  reel=f'''<div class="s-gallery"><div class="s-gallery-top s-container"><span class="s-mono">{c['gallery']}</span><span class="s-mono">[ {c['drag']} ↔ ]</span></div><div class="s-reel-stage" aria-label="{'Galería de proyectos, arrastra o usa las flechas' if es else 'Project gallery, drag or use arrow controls'}">{cards}</div><div class="s-gallery-bottom s-container"><span class="s-mono">DESIGN / DEVELOP / MAKE IT FEEL RIGHT</span><div><button type="button" data-reel="prev" aria-label="{'Proyecto anterior' if es else 'Previous project'}">←</button><button type="button" data-reel="pause" aria-label="{'Pausar galería' if es else 'Pause gallery'}" aria-pressed="false">Ⅱ</button><button type="button" data-reel="next" aria-label="{'Siguiente proyecto' if es else 'Next project'}">→</button></div></div></div>'''
  main=f'''<main id="main" class="s-home"><section class="s-hero"><div class="s-hero-copy s-container"><p class="s-eyebrow"><span class="s-dot" aria-hidden="true"></span>{c['eyebrow']}</p><h1>{c['headline']}</h1><p class="s-hero-intro">{c['intro']}</p><div class="s-service-chips">{chips}</div><div class="s-hero-actions">{button(p+'/contact/',c['start'])}{button('#selected-work',c['secondary'],True)}</div><p class="s-hero-note">{c['note']}</p><span class="s-hero-spark" aria-hidden="true">+<br>+++<br>+++++++<br>+++<br>+</span><span class="s-handnote" aria-hidden="true">{'tu próxima gran idea' if es else 'your next big thing'}<svg viewBox="0 0 110 95" fill="none"><path d="M4 2C90 5 99 36 72 77M56 70l16 9 17-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span></div>{reel}</section>'''
  main+='<div class="s-proof"><div class="s-container">'+''.join('<span><b aria-hidden="true">✳</b>'+item+'</span>' for item in c['proof'])+'</div></div>'
@@ -169,6 +171,9 @@ def main():
   if relative in ('about/index.html','es/about/index.html'):
    portrait='<div class="s-about-portrait-ascii" role="img" aria-label="'+('Retrato ASCII de Laura Ortega' if es else 'ASCII portrait of Laura Ortega')+'"><pre class="s-ascii" data-ascii aria-hidden="true"></pre><img class="s-ascii-source" src="/assets/laura-cutout.webp" alt="" hidden></div>'
    text=re.sub(r'<img[^>]*src="/assets/laura-studio.webp"[^>]*>',lambda m:portrait,text)
+  portrait=(DIST/'assets/laura-ascii.txt').read_text()
+  text=text.replace('<pre class="s-ascii" data-ascii aria-hidden="true"></pre>', '<pre class="s-ascii" aria-hidden="true">'+escape(portrait)+'</pre>')
+  text=re.sub(r'<img class="s-ascii-source"[^>]*>', '', text)
   if '/studio.css' not in text:text=text.replace('</head>','<link rel="stylesheet" href="/studio.css"><script src="/studio.js" defer></script></head>')
   f.write_text(text)
 

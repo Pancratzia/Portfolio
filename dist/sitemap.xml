@@ -107,6 +107,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/process/" />
   </url>
   <url>
+    <loc>https://www.pancratzia.com/es/services/ai-images/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/ai-images/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/ai-images/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/ai-images/" />
+  </url>
+  <url>
     <loc>https://www.pancratzia.com/es/services/</loc>
     <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/" />
@@ -128,11 +135,39 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/maintenance/" />
   </url>
   <url>
+    <loc>https://www.pancratzia.com/es/services/maintenance/webflow/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/maintenance/webflow/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/maintenance/webflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/maintenance/webflow/" />
+  </url>
+  <url>
     <loc>https://www.pancratzia.com/es/services/seo-migrations/</loc>
     <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/seo-migrations/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/seo-migrations/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/seo-migrations/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/es/services/seo-migrations/wordpress-to-webflow/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/seo-migrations/wordpress-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/seo-migrations/wordpress-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/seo-migrations/wordpress-to-webflow/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/es/services/web-design/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/web-design/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/web-design/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/web-design/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/es/services/webflow-cms/directories/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-cms/directories/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-cms/directories/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-cms/directories/" />
   </url>
   <url>
     <loc>https://www.pancratzia.com/es/services/webflow-cms/</loc>
@@ -142,11 +177,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-cms/" />
   </url>
   <url>
+    <loc>https://www.pancratzia.com/es/services/webflow-development/figma-to-webflow/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-development/figma-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-development/figma-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-development/figma-to-webflow/" />
+  </url>
+  <url>
     <loc>https://www.pancratzia.com/es/services/webflow-development/</loc>
     <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-development/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-development/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-development/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/es/services/webflow-development/landing-pages/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-development/landing-pages/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-development/landing-pages/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-development/landing-pages/" />
   </url>
   <url>
     <loc>https://www.pancratzia.com/es/services/website-rebuilds/</loc>
@@ -247,6 +296,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/process/" />
   </url>
   <url>
+    <loc>https://www.pancratzia.com/services/ai-images/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/ai-images/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/ai-images/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/ai-images/" />
+  </url>
+  <url>
     <loc>https://www.pancratzia.com/services/</loc>
     <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/" />
@@ -268,11 +324,39 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/maintenance/" />
   </url>
   <url>
+    <loc>https://www.pancratzia.com/services/maintenance/webflow/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/maintenance/webflow/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/maintenance/webflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/maintenance/webflow/" />
+  </url>
+  <url>
     <loc>https://www.pancratzia.com/services/seo-migrations/</loc>
     <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/seo-migrations/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/seo-migrations/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/seo-migrations/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/services/seo-migrations/wordpress-to-webflow/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/seo-migrations/wordpress-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/seo-migrations/wordpress-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/seo-migrations/wordpress-to-webflow/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/services/web-design/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/web-design/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/web-design/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/web-design/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/services/webflow-cms/directories/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-cms/directories/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-cms/directories/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-cms/directories/" />
   </url>
   <url>
     <loc>https://www.pancratzia.com/services/webflow-cms/</loc>
@@ -282,11 +366,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-cms/" />
   </url>
   <url>
+    <loc>https://www.pancratzia.com/services/webflow-development/figma-to-webflow/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-development/figma-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-development/figma-to-webflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-development/figma-to-webflow/" />
+  </url>
+  <url>
     <loc>https://www.pancratzia.com/services/webflow-development/</loc>
     <lastmod>2026-11-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-development/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-development/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-development/" />
+  </url>
+  <url>
+    <loc>https://www.pancratzia.com/services/webflow-development/landing-pages/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pancratzia.com/services/webflow-development/landing-pages/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.pancratzia.com/es/services/webflow-development/landing-pages/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pancratzia.com/services/webflow-development/landing-pages/" />
   </url>
   <url>
     <loc>https://www.pancratzia.com/services/website-rebuilds/</loc>

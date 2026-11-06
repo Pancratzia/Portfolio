@@ -40,3 +40,11 @@ the curved draggable project carousel, clear Webflow positioning, simplified
 navigation, and direct email contact. Pricing is on its own page, not the hero.
 The redesign script regenerates the homepage, contact pages and shared chrome;
 update its copy when editing those pieces. Do not run legacy homepage builders.
+
+The hero carousel now contains ASCII service cards, never project screenshots
+or a "Your next website" placeholder. Project screenshots belong in selected
+work. Portraits are inline ASCII text from assets/laura-ascii.txt; do not render
+a second portrait image or leave a source image in the page.
+Run scripts/redesign_studio.py then scripts/services_studio.py when rebuilding
+the studio pages. The latter maintains the services hub and nested specialties;
+preserve all existing maintenance prices and localization add-on terms.
