@@ -31,3 +31,12 @@ The explicit language selector preference always overrides browser detection.
 The checked-in dist/ tree is the current deployable website. For small edits,
 edit dist directly and update matching source templates where applicable.
 Do not regenerate all pages with legacy build.py for unrelated small changes.
+
+## Studio direction (November 2026)
+
+The current homepage is the bilingual ASCII studio redesign. Its source is
+scripts/redesign_studio.py with dist/studio.css and dist/studio.js. Preserve
+the curved draggable project carousel, clear Webflow positioning, simplified
+navigation, and direct email contact. Pricing is on its own page, not the hero.
+The redesign script regenerates the homepage, contact pages and shared chrome;
+update its copy when editing those pieces. Do not run legacy homepage builders.
