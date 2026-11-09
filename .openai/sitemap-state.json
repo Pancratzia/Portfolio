@@ -1,274 +1,274 @@
 {
   "404.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "d4ee30a986007c70f26b0eb309dfccead9c459a50b02363949fe016f34f6b993"
+    "lastmod": "2026-11-09",
+    "sha256": "3c14af4fa6c9c7d8d7d402f3b4e2cc72008b4862c444579536f0502224cb2911"
   },
   "about/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "76985e8bfd3970c5a0f2cc5b23b6940178a15e415353202bf28bddc765c2ea6b"
+    "lastmod": "2026-11-09",
+    "sha256": "d770404cf1ed139966cdbcc98344e2207cc7d24d55c9054185ac6ba890c10e76"
   },
   "blog/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "f3f8ed109226b4bfe57014f5e0b873ec7821ee40bff8581769934cb062419535"
+    "lastmod": "2026-11-09",
+    "sha256": "4f445a8c17ab04d7c051f98962a6ce18be932eee9fb6358c7027c3dc18152408"
   },
   "blog/website-migration-checklist/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "962ba0e9202a9ccdc2da92d84395e42b43b5f2766f0ebbdf7885c65cfa0664ac"
+    "lastmod": "2026-11-09",
+    "sha256": "2950f4094875c66b75f9087f11f31f12b4a0836c62710ce4ac802d3f7415063d"
   },
   "blog/wordpress-to-webflow-migration/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "b1864abb8bb9f7a311484c5da715780387304302280929813d190716c7ecd78f"
+    "lastmod": "2026-11-09",
+    "sha256": "1a11704a8607dc5c549496102b3790964d78c8b0a19de4fdd72c4e3d17950585"
   },
   "contact/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "29685c31e9a385c294da911973a1c92116088c06c839d77783e61c4044955a97"
+    "lastmod": "2026-11-09",
+    "sha256": "074af4517a284b2709fd6fcbf74f5fd47dbd978cdec4d92ec69c95c44f256275"
   },
   "es/404.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "ab0b1aa220e48767db6efbb4002aba315a4bc890f86708b1766d5285e769fc6a"
+    "lastmod": "2026-11-09",
+    "sha256": "01c9f5c36e706e35462073b1fd15ef8beced5796841f1ff41e016b1e8483e25c"
   },
   "es/about/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "52e85ae3b141eb5adde7247e0fb867a3ad231a7cfbbb12bb27140377b9a41108"
+    "lastmod": "2026-11-09",
+    "sha256": "ed5520b2365b3cd22cf2180d0acedf2abcf42b4dba8d7c34c20795c363020b28"
   },
   "es/blog/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "edf6649f100aaeb4121d728130b553b364f4b48812a36946e78965ff50a12a9e"
+    "lastmod": "2026-11-09",
+    "sha256": "2cce428693ce596036258f2b5f87934b1ebccc292bb9020227247615b5702112"
   },
   "es/blog/website-migration-checklist/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "ce6593f8759922fcc50501436351598c1a9d128b33756e027a157e5c39980565"
+    "lastmod": "2026-11-09",
+    "sha256": "f39525e785c9a6b2881af40dd3268ffa5bf961002395ecd2b5189d7772c141ea"
   },
   "es/blog/wordpress-to-webflow-migration/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "2a0f173f4ce17ff2847862a1a31a32e7d7807c239d3acac9b3cbaf053112016f"
+    "lastmod": "2026-11-09",
+    "sha256": "353083f90f8c31945cf8e71178ad04209b29561b13abd95d070410050a2b9061"
   },
   "es/contact/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "582e4d9b842a616f2faf348030e76db1b920a7e943662c8724dd7d13fe6db499"
+    "lastmod": "2026-11-09",
+    "sha256": "37ce8604c9aacc60839ae417f0795ef38b4cb860aa6895187669b1fbf257ed83"
   },
   "es/faq/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "70a57cf792ecdf1923bae6a1f9aad6ef865a2cc8322b6b92dba6f277a2f7deb8"
+    "lastmod": "2026-11-09",
+    "sha256": "68a888a99a7ff25cb3a2f2a1bfeb0c6c315a657df0c5ee7650237c852e2982b9"
   },
   "es/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "f2dd0bfe14ee2085d5f35661c873e8101799bd9d034de99411085633493cd808"
+    "lastmod": "2026-11-09",
+    "sha256": "ddc6bf4655b5c2f05a55ad6a992e52164f86a22e4d8422183c0bc098d9d2aabc"
   },
   "es/pricing/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "8a62363cfd19e89b38e16e8a0f26a94bfad247b86229252a7b379d7c07885982"
+    "lastmod": "2026-11-09",
+    "sha256": "5f8d5c74f8f73ba573d93483a84076a057fc1b729b4a971f4cbafce2652a716e"
   },
   "es/privacy/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "c45280d69b1fdbba74dac0b127531a360bcff5d0a4ac58bc2c9fa9306b062291"
+    "lastmod": "2026-11-09",
+    "sha256": "cac5664af73e7ab3763c88d13af1d55e7d690c68b3359020b9bdca2536d03b77"
   },
   "es/process/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "c62608c458e898229737daa1bf532acf8061fa4ae8edaa9287148b807bdbd309"
+    "lastmod": "2026-11-09",
+    "sha256": "7fbacdf5900f43fbcb3cfda04bc76d909840adc80bf08083167c242a7262b480"
   },
   "es/services/ai-images/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "d3df4f994ef185cdb97d8e7def1a423ee4fcf7709c51ba19e24c19fdf34ac840"
+    "lastmod": "2026-11-09",
+    "sha256": "0f5e0cb1b23f246089c3586831f2e7c186aaaf67fcfa1f3da45a3c6d6cd11135"
   },
   "es/services/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "c977f86f145587421866c0d8979aaa88348c3b593131c4ea30ecd49aad48995d"
+    "lastmod": "2026-11-09",
+    "sha256": "98897550a7d66bf8cedec718ed445bdbdc782372b2f69697f2accd92d310f658"
   },
   "es/services/localization/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "c5625586cf607fdede946dbd9269182a1e24a080641a54c7f5b61f2e6aebc15f"
+    "lastmod": "2026-11-09",
+    "sha256": "be86f60d2624048ca80d8689a910f0f309f2031a9cab0a95b73925df6aa42fca"
   },
   "es/services/maintenance/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "c35fa532105561f568a8e34a8d6d6e2edf31d5206ac5b58c1ba01a0803f264a0"
+    "lastmod": "2026-11-09",
+    "sha256": "fed5e2bd7f98cdcd09b75cdc4a7cdd4a287cc126bdbfc9931853f11c4ac458d3"
   },
   "es/services/maintenance/webflow/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "3d558a83c92ad2ef2909cbbb49c7542f97a43b57928700c33f09ce7cd00fc334"
+    "lastmod": "2026-11-09",
+    "sha256": "5a51e85bb3e10e681d49c31aa4d148aaa50255b8a10a1cf780ad3cd0ba410e3a"
   },
   "es/services/seo-migrations/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "0cc60f9953bd0d07f61eea4b4c240b6cdfd80b74f551ce9959a8d63429a1c5cd"
+    "lastmod": "2026-11-09",
+    "sha256": "0c39e314c432b3332e4af69a26627141a4d9fc552225a4f711b92871f34d9fd3"
   },
   "es/services/seo-migrations/wordpress-to-webflow/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "02c9a419e16006d241cdb7fe4055f467a3ec6fdc964792e50d1060e1562b4afc"
+    "lastmod": "2026-11-09",
+    "sha256": "5fa1bd158114a8f9fd78a7a382433dd8546f9690fcebbcd61bad0449e3718b39"
   },
   "es/services/web-design/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "7e2c211e469d7ae42d9e1c11068ea1d6179a93008b04c32d0ed996a172a244aa"
+    "lastmod": "2026-11-09",
+    "sha256": "dbc2f6543816175b30f78127428bf13a8f7162b6081368e7f3a92cd16efe1928"
   },
   "es/services/webflow-cms/directories/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "ab810d6f591b217f1ea204aa88d487f604e5b04e985f9aa274b2255ae85702ed"
+    "lastmod": "2026-11-09",
+    "sha256": "7805c710482213e4ee0ba9ddf2ecad32b439069197541cc2106f7bb5f5eb8204"
   },
   "es/services/webflow-cms/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "980d3eb9b4e3426979e7cbb789733289d693a6c8ac1582ddec830f43d67c9e33"
+    "lastmod": "2026-11-09",
+    "sha256": "9550c2dd4aee566be09fb199c38f0fc1485d08d8e9e33994975c21d239e46fca"
   },
   "es/services/webflow-development/figma-to-webflow/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "1d9905b2fce4870f8d510feba68ead49b4d22bc65bef0b0d191c723d8237af03"
+    "lastmod": "2026-11-09",
+    "sha256": "23304eb3567e230b749932e02c549078a6bd0a706a09f3edf8f147de0ed0c059"
   },
   "es/services/webflow-development/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "4e0edc580d661269878e0502ebc587b7ef489e4753943de34206fe3547282dfc"
+    "lastmod": "2026-11-09",
+    "sha256": "09a81a6638feb42e806b58b5597e997aa202faa863e4db45f8239714602feb3c"
   },
   "es/services/webflow-development/landing-pages/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "0e2385f08cdd57e1ba4cbbfc4e79c6d215ed75a762d0a352a03a945073597d77"
+    "lastmod": "2026-11-09",
+    "sha256": "5c449f69ee352d37e1412317a569aa26ea829eaa501a75f24e63763cc23a4334"
   },
   "es/services/website-rebuilds/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "a49e0eefbc7d587e55acd950951d8af277cf51f4138bffc37edfcedba081dece"
+    "lastmod": "2026-11-09",
+    "sha256": "2b4c162441d3ed55722c9e331bb71c3d4edb6fe8f3eec313f8f187ce4315e8de"
   },
   "es/services/wordpress-oxygen/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "afb11d6f85b047291d2a127a5a81dfd8fbdc2000278b48f7b955803271ed04c8"
+    "lastmod": "2026-11-09",
+    "sha256": "c1b4550a6c4e39ac0b1bd0ce3afde13ba7bd9c22988a8dd8c921d745d9045002"
   },
   "es/storage/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "07cb1f890c95b613b585c092f26e73d3dbf536951b277150e4541b85c587c964"
+    "lastmod": "2026-11-09",
+    "sha256": "8aa9356f0b06529dfaf5480315221e9f9fb3617e25e784991c21707989c0a220"
   },
   "es/terms/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "a6a271a9fd690c1a7429dfcc7c1a7a42f430ac9fefe82e706a92bbac9ce7823a"
+    "lastmod": "2026-11-09",
+    "sha256": "6af368f05a91f48f32af43e67c6357031926b558058280a73fc342e94753117e"
   },
   "es/thanks/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "620e30e38fcc9650863ffe99506677a8d4cac91c16c16b34c91fe29911d6e1f7"
+    "lastmod": "2026-11-09",
+    "sha256": "92f6735d4e19d10d1161507949079f78226a4c2a5ce84400bf1fd559044a8984"
   },
   "es/work/her-vitality-clinic/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "fc2745c21f1135cf0c35fce0d6eab200ad592755172c4810e56fc2f7a1a95f5e"
+    "lastmod": "2026-11-09",
+    "sha256": "0b0e4c2a0c1ca8073846bc10c8f5885ed44208469d29f92d326aac0d95945efb"
   },
   "es/work/hire-warriors/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "ffed8d050f16a9f23b99acce33bbb0422b4d5af1e8e3c4d4e2a3fed51768b736"
+    "lastmod": "2026-11-09",
+    "sha256": "d1fa94ab91b7f38091b4a50243d4f284faa72d58128a868d2cf5faee8111f619"
   },
   "es/work/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "9b3aba918e014763c509c4b3181e73ea8d0bdc6f234cbbe4d79bab81213a4214"
+    "lastmod": "2026-11-09",
+    "sha256": "6975a37e757a21b4313b1ef775e3cc33e9431795415785d5de376519ccd61131"
   },
   "es/work/joumana-kayrouz/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "14b613e74f3345d890ae678c4b6050689ef7577a804fa63624801dfd01920142"
+    "lastmod": "2026-11-09",
+    "sha256": "6b874db0d594cd3a45488ef60252d9034d2cae62215ea5332b37bc1cc0ad2944"
   },
   "es/work/mungo-law/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "7a2411f9545c34372c147ea8b817dbdfcb108e66b5111c17a65465ea081b3d0d"
+    "lastmod": "2026-11-09",
+    "sha256": "e6b2676f60d7262d2b3fcb0fdd7fe71d78a8be82a7da734369e56f0130f97d80"
   },
   "faq/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "076e7a78f8645df9f3992003a30a7d1d6174d33badd92374c39f7adcee012328"
+    "lastmod": "2026-11-09",
+    "sha256": "19370973a5770127465480e331747b7d52497a83ebd44667c6cf4cded07538e2"
   },
   "index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "1f0193de28f01c74008729ac24c9088c509921bb62e0ceb95e8b10060bee507f"
+    "lastmod": "2026-11-09",
+    "sha256": "4551129a8f292032a5bbc3ebfbb046ac263f166a01ce3a40b273ed5569791e34"
   },
   "pricing/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "02d447a2ec9d452398a5e5535bbcefa4d92c480b7b0953de8270d5a20a7981f5"
+    "lastmod": "2026-11-09",
+    "sha256": "f28758618f63d5fb0151e852505925e9d44f7cf897b757907e2ab23b36ef9fe6"
   },
   "privacy/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "0bc3cf5bed7fa48f3aec935a31714a94b727918fc1073226521bdbe60861253e"
+    "lastmod": "2026-11-09",
+    "sha256": "b918069d62cae3c1497994b7516dba35637c714dfcda197ea705ed7368e3343a"
   },
   "process/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "5f5f4b2980de1468ac4c4e224b0fe54fe5b8e03ba4950103011b63b4cf19b0ba"
+    "lastmod": "2026-11-09",
+    "sha256": "eaa5aabeff7a2c6d605c579e4f0fdb91b72fe19eece7ad42e4fbde50160117a9"
   },
   "services/ai-images/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "c1480fd76ddab020416515951ac8f508d4351ad437ba553429d4cc7c94ceb520"
+    "lastmod": "2026-11-09",
+    "sha256": "1a13f330b60dad72da9550722bb2ca9b68c7b917c168852d37ec64c28807e43d"
   },
   "services/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "7580c0acd75a0b9e4fb89cf91c72fb1dc6032cb08b54a5041060737c6ef53cf1"
+    "lastmod": "2026-11-09",
+    "sha256": "f3a98d203c2b297a301c09b0a6ac9c359a09d9a5813257bf12ef39149acd01a5"
   },
   "services/localization/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "e5620b54aaaba9973ea09e3f0d5cb5d4d52ba95d1f63e0973ed63c750b49dc47"
+    "lastmod": "2026-11-09",
+    "sha256": "1e71230f1dcd493ff3e383020099971f78efaafa6473d5dafbc87774625460dc"
   },
   "services/maintenance/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "2da580f2c0aa81800b6b5f48e753f60e93dfb4f4d54dc73f0ea4cbd15b12f151"
+    "lastmod": "2026-11-09",
+    "sha256": "ee649c28f49ce5e4f38f269397d5334dafe84d6f4105ce81db145bc126f0ab0e"
   },
   "services/maintenance/webflow/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "dd696669074a55427610b4e47a865253abfb23c1d87ab4d98fae919d7519457b"
+    "lastmod": "2026-11-09",
+    "sha256": "b4e0594061f58ad6222daceb7a94fd51749a2102c2b7185bf3093c2e946bfda2"
   },
   "services/seo-migrations/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "6f91013dcd9cb75c1a12736d5ef47eb1a41dc7f303e1f8f449e5346dad92811b"
+    "lastmod": "2026-11-09",
+    "sha256": "1d4c5d7c449373b0d642552496adc6b6f1e3704afd2756d3b73ee23d9d8b8a40"
   },
   "services/seo-migrations/wordpress-to-webflow/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "91fc2a6a7ae7ae9040fd01d10b9ba93e0d7d37e4f949144d379ebac7605d41f6"
+    "lastmod": "2026-11-09",
+    "sha256": "4751ba2b152ec75f2f53e50d94466de503058e0f935cfcba631783572eb07eb4"
   },
   "services/web-design/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "2b89b4c1e700048d73320d8a4ec52f071107f4c8342c15db1d09ca03630ae6d6"
+    "lastmod": "2026-11-09",
+    "sha256": "afb90d16666e8d092023906b280e9d2cdbdca7f999ee77ec2febb816cf9be00f"
   },
   "services/webflow-cms/directories/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "1e2de4bb96d0f0efdce5e44867fc78384734ea0c70ddcb9e1ab09eb3c2db1870"
+    "lastmod": "2026-11-09",
+    "sha256": "75582123f56820a2c80c5d06f086e19a2603f039ea4b0052dc54db643f7c1469"
   },
   "services/webflow-cms/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "863be16393e68061dc786fc6df34f1c8cafb473bbee5c01c4ffc650c66422797"
+    "lastmod": "2026-11-09",
+    "sha256": "1570fbd35e625d68ea823ee706f8cabb21963f442b5ceed5c27ed38ed382ef60"
   },
   "services/webflow-development/figma-to-webflow/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "c79f368f1d7f22279d9ef5d99c913d8ed98c3c948979b3742a8dc02a116a51cd"
+    "lastmod": "2026-11-09",
+    "sha256": "46f8156fb13f9fa9c3f0512105ba0a97efe19ef91e00066f8c380ec989ee66d7"
   },
   "services/webflow-development/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "17ba69abe3913f340761272aa0c8cde53ad93a98179518da7e46f1ba9d65cc67"
+    "lastmod": "2026-11-09",
+    "sha256": "c3c141b6d213e263be183a3ee4ab41f780c90ef558850b4da69291ca6991002f"
   },
   "services/webflow-development/landing-pages/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "6b14a6b611ffafd9c36f4858b8a842fdcd4da85079bf891ebd0fab6bdb689ef6"
+    "lastmod": "2026-11-09",
+    "sha256": "b9dadb90165f9aefb5fc17757e303d42caa5c8043540df867710e962754323e2"
   },
   "services/website-rebuilds/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "5670248b321fc48c2cc3e5fdba65c608ba52569554c1acc0ab908000166903ea"
+    "lastmod": "2026-11-09",
+    "sha256": "19184767dfe9c1ceffcafc0872cd35ad98f806283e05bf570d4ce283e533ca6d"
   },
   "services/wordpress-oxygen/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "8907f4fb9a2a374a103ee618cbbf4c01c82ddeb79335c9585578dafd5b286eec"
+    "lastmod": "2026-11-09",
+    "sha256": "5880911b3aab0c25ed93b7bb2d18cb537505c93cf858b34665959c2c90c86144"
   },
   "storage/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "e3b537ca3839e7f557da19c4ad15c0bf34c072d9604f565638c18d1590366594"
+    "lastmod": "2026-11-09",
+    "sha256": "2208147ebfdc32c566df655555667dbdf2fff3b95bc7cbd0dd76feeda89010b0"
   },
   "terms/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "2884bf198c0b3408320f9d9b4c9d5dc81829b49d90efe400aa47ebe165bc6054"
+    "lastmod": "2026-11-09",
+    "sha256": "da1bb961f0465d4c7bb9e625d61caa9443e435ce314c17412776d939437a0a6d"
   },
   "thanks/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "02b0b66222dc34210488f578c0dcac7e6654183a27034e2b766e296ef160c9f5"
+    "lastmod": "2026-11-09",
+    "sha256": "f1e02873c519800dc2d7f1becea83f5ef2017d0d22944391a6e6de0672b0ddf3"
   },
   "work/her-vitality-clinic/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "db3b2a17567b823ac359f8b5d11ec713035f7ed5e0c743e8ed2f621c41046e0b"
+    "lastmod": "2026-11-09",
+    "sha256": "45b1b835f1e2f59a273db1a38230d123d1af6fdc241b5f19d39ca844d91eb69c"
   },
   "work/hire-warriors/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "105f4e13782c0052d6ec1c30600c4daf62022eb43b93b1747582f33fe99def2a"
+    "lastmod": "2026-11-09",
+    "sha256": "6e383d41aef541b619d84e57bcbb98aa5d8f12b247ee5b4575c26e6669117f92"
   },
   "work/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "46a312d2e56380f865a95864db9acda8f32c50c600fe7cd2743dc7b25d282d1f"
+    "lastmod": "2026-11-09",
+    "sha256": "d026d6df64f04cd0b77f547443bb9a42b5b435647f7d58e6ec18512d4bb58fa4"
   },
   "work/joumana-kayrouz/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "94ae773935d4c3ca05ccd95485704b60597b41c0c7e3b529c81102b586810f4b"
+    "lastmod": "2026-11-09",
+    "sha256": "160911926bba0850cf49c3505f40e746fb083e3020c0b161c854cc6f8bb50746"
   },
   "work/mungo-law/index.html": {
-    "lastmod": "2026-11-06",
-    "sha256": "ba17879432fc87739f92d8c5391d92b1b368cfc71214646351185693cf9a1029"
+    "lastmod": "2026-11-09",
+    "sha256": "0f5449151319d6564f81844699e59b62d7545f29d42e5033940baabb10660292"
   }
 }
