@@ -66,6 +66,7 @@ def footer():
 <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><p {col}>{t('Connect', 'Contacto directo')}</p><a href="mailto:me@pancratzia.com">me@pancratzia.com</a><a href="https://webflow.com/@pancratzia">Webflow ↗</a><a href="https://www.upwork.com/freelancers/~016a6410dfa02febf5">Upwork ↗</a><a href="https://www.linkedin.com/in/leortegaperez/">LinkedIn ↗</a></div>
 </div>
 <div class="row" style="justify-content: space-between; margin-top: 56px; padding-top: 24px; border-top: 1px solid #4a3f55; font-size: 13px"><span>© 2026 Laura Ortega · Pancratzia · {t('Remote, worldwide', 'Remoto, en todo el mundo')} · EN / ES</span><span class="row" style="gap: 20px"><a href="{u('/privacy/')}">{t('Privacy', 'Privacidad')}</a><a href="{u('/terms/')}">{t('Terms', 'Términos')}</a><a href="{u('/storage/')}">{t('Browser storage', 'Almacenamiento')}</a></span></div>
+<p class="footword" aria-hidden="true">pancratzia<span>.</span></p>
 </div></footer>'''
 
 

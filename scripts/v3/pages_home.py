@@ -16,7 +16,7 @@ def work_cards(cols='g2'):
     out = []
     for slug, name, img, meta, desc in PROJECTS:
         out.append(f'''<a class="work reveal" href="{u('/work/' + slug + '/')}">
-<div class="shot" style="aspect-ratio: 4 / 3"><img src="{img}" alt="{t(name + ' website', 'Sitio web de ' + name)}" loading="lazy" width="1000" height="750"></div>
+<div class="shot" data-label="{t('View case study →', 'Ver caso →')}" style="aspect-ratio: 4 / 3"><img src="{img}" alt="{t(name + ' website', 'Sitio web de ' + name)}" loading="lazy" width="1000" height="750"></div>
 <p class="sm" style="margin: 0; letter-spacing: .06em; text-transform: uppercase">{t(*meta)}</p>
 <h3 class="h3" style="font-size: 30px; transition: color .2s">{name} ↗</h3>
 <p class="txt">{t(*desc)}</p>
@@ -71,7 +71,7 @@ def home():
     pk = ''.join(f'''<a class="pricecard" href="{u('/pricing/')}" style="{'background: #7136d0;' if hi else ''}{'' if i == 3 else 'border-right: 1.5px solid #f5f2ec;'}"><p style="margin: 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: {'#ece4fb' if hi else '#b994f5'}">{n} · {name}</p><p style="margin: 0; font: 700 52px/1 'Space Grotesk', sans-serif; letter-spacing: -0.04em">{price}</p><p style="margin: 0; font-size: 15px; line-height: 1.5; color: {'#ece4fb' if hi else '#d4cbdc'}">{d}</p></a>''' for i, (n, name, price, d, hi) in enumerate(packages))
 
     body = f'''
-<section class="sec">
+<section class="sec dots">
 <div class="hero" style="max-width: 1360px; margin: 0 auto">
 <div class="hero-copy">
 <svg class="spin hide-m" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true" style="position: absolute; right: 40px; top: 48px"><defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"></path></defs><text font-family="Space Grotesk" font-size="11.5" letter-spacing="3.2" fill="#7136d0"><textPath href="#circ">{t('AVAILABLE FOR NEW PROJECTS · EN / ES · ', 'DISPONIBLE PARA PROYECTOS · ES / EN · ')}</textPath></text></svg>
@@ -86,14 +86,15 @@ def home():
 <li class="chip"><span class="pu">{CHECK}</span>{t('English + Spanish', 'Español + inglés')}</li>
 </ul>
 </div>
-<div style="position: relative; display: flex; flex-direction: column">
-<img src="/assets/laura-portrait.webp" alt="{t('Laura Ortega, Webflow designer and developer', 'Laura Ortega, diseñadora y desarrolladora Webflow')}" width="900" height="900" style="width: 100%; flex: 1; min-height: 520px; object-fit: cover; display: block">
-<div class="float hide-m" style="position: absolute; left: -44px; top: 64px; background: #fff; border: 1.5px solid #251b33; padding: 14px 18px; display: flex; align-items: center; gap: 12px; box-shadow: 6px 6px 0 #251b33">
+<div class="hero-art">
+<p class="hero-word" aria-hidden="true"><span>WEB</span><span>FLOW</span></p>
+<img class="hero-cut" src="/assets/laura-cutout.webp" alt="{t('Illustration of Laura Ortega with her poodle and a laptop', 'Ilustración de Laura Ortega con su poodle y una laptop')}" width="1122" height="1402">
+<div class="float sticker hide-m" style="left: 28px; top: 48px">
 <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" fill="#7136d0"></rect><path d="M8 15.5l4.5 4.5L22 10.5" fill="none" stroke="#fff" stroke-width="2.6"></path></svg>
 <div><p style="margin: 0; font: 600 14px/1.2 'Space Grotesk', sans-serif">{t('Site published', 'Sitio publicado')}</p><p style="margin: 2px 0 0; font-size: 12px; color: #6e6478">{t('yourbrand.com · just now', 'tumarca.com · justo ahora')}</p></div>
 </div>
-<div class="float hide-m" style="position: absolute; right: 28px; bottom: 120px; background: #251b33; color: #f5f2ec; padding: 12px 16px; font: 500 13px/1 'Space Grotesk', monospace; animation-delay: -2.4s">&lt;/&gt; build.webflow<span class="caret" style="color: #b994f5">_</span></div>
-<div class="dark" style="padding: 22px 28px; display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<div class="float sticker sticker-dark hide-m" style="right: 24px; top: 46%; animation-delay: -2.4s">&lt;/&gt; build.webflow<span class="caret" style="color: #b994f5">_</span></div>
+<div class="hero-proof">
 <p style="margin: 0; font-size: 15px; line-height: 1.4">{t('Built the 3 sites that earned an agency<br><strong style="font-weight: 600">Webflow Certified Partner</strong> status.', 'Construí los 3 sitios con los que una agencia<br>obtuvo el estatus de <strong style="font-weight: 600">Webflow Certified Partner</strong>.')}</p>
 <p style="margin: 0; font: 700 40px/1 'Space Grotesk', sans-serif; color: #b994f5">3/3</p>
 </div>
@@ -156,10 +157,10 @@ def home():
 
 <section class="sec dark" style="position: relative; overflow: hidden">
 <svg class="spin hide-m" width="220" height="220" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; right: 6%; top: 50%; margin-top: -110px; opacity: .14; animation-duration: 40s"><path fill="#b994f5" d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3Z"></path></svg>
-<figure class="reveal" style="max-width: 1100px; margin: 0 auto; padding: 96px 40px; display: flex; flex-direction: column; gap: 28px; position: relative">
+<figure class="reveal" style="max-width: 1100px; margin: 0 auto; padding: 112px 40px; display: flex; flex-direction: column; gap: 28px; position: relative">
 <p style="margin: 0; font: 700 64px/0.6 'Space Grotesk', sans-serif; color: #b994f5" aria-hidden="true">“</p>
 <blockquote style="margin: 0; font: 500 38px/1.25 'Space Grotesk', sans-serif; letter-spacing: -0.02em">{t("I'm so happy with the results we achieved together. We went from zero visits and not showing up in any search to <span class=\"q\">ranking in first place</span>, thanks to Laura's SEO work and analysis.", 'Estoy muy feliz con los resultados que logramos juntos. Pasamos de tener cero visitas y no aparecer en ninguna búsqueda a <span style="color: #b994f5">posicionarnos en primer lugar</span>, gracias al trabajo y análisis SEO de Laura.')}</blockquote>
-<figcaption style="display: flex; align-items: center; gap: 16px"><span aria-hidden="true" style="width: 52px; height: 52px; background: #7136d0; display: flex; align-items: center; justify-content: center; font: 700 20px/1 'Space Grotesk', sans-serif">SJ</span><span><span style="display: block; font: 600 17px/1.2 'Space Grotesk', sans-serif">Sergio Jiménez</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #b3a8bd">Prosatcomm · Venezuela</span></span></figcaption>
+<figcaption style="display: flex; align-items: center; gap: 16px"><span aria-hidden="true" style="width: 52px; height: 52px; background: #7136d0; display: flex; align-items: center; justify-content: center; font: 700 20px/1 'Space Grotesk', sans-serif">SJ</span><span><span style="display: block; font: 600 17px/1.2 'Space Grotesk', sans-serif">S. Jiménez</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #b3a8bd">Prosatcomm · Venezuela</span></span></figcaption>
 </figure>
 </section>
 
@@ -172,7 +173,7 @@ def home():
 </div></section>
 
 <section class="sec"><div class="g2" style="max-width: 1360px; margin: 0 auto">
-<div class="br" style="position: relative"><img src="/assets/office.webp" alt="{t("Laura's workspace with a website on screen and a poodle asleep nearby", 'El espacio de trabajo de Laura con un sitio web en pantalla y una poodle dormida cerca')}" loading="lazy" style="width: 100%; height: 100%; min-height: 520px; object-fit: cover; display: block"><p style="position: absolute; left: 24px; bottom: 24px; margin: 0; background: #f5f2ec; border: 1.5px solid #251b33; padding: 10px 14px; font-size: 13px">{t('Office manager: a very sleepy poodle', 'Gerente de oficina: una poodle muy dormilona')}</p></div>
+<div class="br" style="position: relative"><img src="/assets/laura-studio.webp" alt="{t('Illustration of Laura working at her desk at night with her poodle', 'Ilustración de Laura trabajando de noche en su escritorio con su poodle')}" loading="lazy" style="width: 100%; height: 100%; min-height: 520px; object-fit: cover; display: block"><p style="position: absolute; left: 24px; bottom: 24px; margin: 0; background: #f5f2ec; border: 1.5px solid #251b33; padding: 10px 14px; font-size: 13px">{t('Office manager: a very sleepy poodle', 'Gerente de oficina: una poodle muy dormilona')}</p></div>
 <div class="cell" style="padding: 96px 40px 96px 56px; gap: 20px; justify-content: center">
 <p class="eyebrow" style="margin: 0">{t('About', 'Sobre mí')}</p>
 <h2 class="h2">{t("Hi, I'm Laura. Engineer brain, designer eye.", 'Hola, soy Laura. Mente de ingeniera, ojo de diseñadora.')}</h2>

@@ -3,7 +3,7 @@ from pages_home import PROJECTS, work_cards
 
 
 def hero(eyebrow, h1, lead, extra=''):
-    return f'''<section class="sec"><div class="wrap pad g2" style="gap: 56px; align-items: end; padding-bottom: 72px">
+    return f'''<section class="sec dots" style="position: relative; overflow: hidden"><svg class="hero-deco spin hide-m" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3Z"></path></svg><div class="wrap pad g2" style="gap: 56px; align-items: end; padding-bottom: 72px; position: relative">
 <div><p class="eyebrow up d1">{eyebrow}</p><h1 class="h1 up d2">{h1}</h1></div>
 <div class="up d3" style="display: flex; flex-direction: column; gap: 24px"><p class="lead">{lead}</p>{extra}</div>
 </div></section>'''
@@ -73,7 +73,7 @@ def cases():
         c = CASES[slug]
         nslug, nname = PROJECTS[(i + 1) % 4][0], PROJECTS[(i + 1) % 4][1]
         tags = ''.join(f'<span class="tag">{t(*x.split("|")) if "|" in x else x}</span>' for x in c['tags'])
-        body = f'''<section class="sec"><div class="wrap pad" style="padding-bottom: 56px">
+        body = f'''<section class="sec dots" style="position: relative; overflow: hidden"><svg class="hero-deco spin hide-m" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3Z"></path></svg><div class="wrap pad" style="padding-bottom: 56px; position: relative">
 <p class="crumb"><a href="{u('/work/')}">{t('Work', 'Proyectos')}</a> / {name}</p>
 <div class="row up d1" style="gap: 8px; margin-bottom: 24px">{tags}</div>
 <h1 class="h1 up d2">{name}</h1>
@@ -250,7 +250,7 @@ def faq():
         (t('How long will my project take?', '¿Cuánto tardará mi proyecto?'), t('It depends on scope, content readiness, migration volume and feedback. We agree on a schedule after reviewing the project.', 'Depende del alcance, del contenido listo, del volumen de migración y del feedback. Acordamos un calendario después de revisar el proyecto.')),
     ]
     det = ''.join(f'<details{" open" if i == 0 else ""}><summary>{q} <span class="pm" aria-hidden="true">+</span></summary><p>{a}</p></details>' for i, (q, a) in enumerate(qa))
-    body = f'''<section class="sec"><div class="wrap pad g2" style="gap: 64px; align-items: start">
+    body = f'''<section class="sec dots"><div class="wrap pad g2" style="gap: 64px; align-items: start">
 <div style="position: sticky; top: 120px; display: flex; flex-direction: column; gap: 24px">
 <p class="eyebrow up d1" style="margin: 0">FAQ</p><h1 class="h1 up d2">{t('Questions before <span class="pu">we begin?</span>', '¿Preguntas antes <span class="pu">de empezar?</span>')}</h1>
 <p class="lead up d3">{t('A few practical answers about scope, revisions, maintenance and working together.', 'Respuestas prácticas sobre alcance, revisiones, mantenimiento y cómo trabajamos juntas.')}</p>
@@ -291,7 +291,7 @@ def contact():
 def blog_index():
     posts = [('wordpress-to-webflow-migration', '/assets/wordpress-webflow-migration.webp', t('14 October 2026 · WordPress / Webflow', '14 de octubre de 2026 · WordPress / Webflow'), t('Should you migrate from WordPress to Webflow?', '¿Deberías migrar de WordPress a Webflow?'), t('A migration should improve how your website works, how your team publishes and how you serve your customers. Here are the questions to answer before changing platforms.', 'Una migración debe mejorar cómo funciona tu sitio, cómo publica tu equipo y cómo atiendes a tus clientes. Estas son las preguntas que conviene responder antes de cambiar de plataforma.')),
              ('website-migration-checklist', '/assets/migration-hero.webp', t('Migrations · Practical guide', 'Migraciones · Guía práctica'), t('Planning a website migration? Check these things before you move.', '¿Planeas migrar tu sitio? Revisa esto antes de mudarte.'), t("A new design is only part of the move. Here's how to prepare your content, URLs, CMS and forms so the new website has a solid starting point.", 'Un nuevo diseño es solo parte de la mudanza. Así puedes preparar contenido, URLs, CMS y formularios para que el nuevo sitio arranque con una base sólida.'))]
-    cards = ''.join(f'''<a class="work reveal" href="{u('/blog/' + s + '/')}"><div class="shot" style="aspect-ratio: 16 / 9"><img src="{img}" alt="" loading="lazy" width="1672" height="941"></div><p class="sm" style="margin: 0; letter-spacing: .08em; text-transform: uppercase">{m}</p><h2 class="h3" style="font-size: 30px">{h}</h2><p class="txt">{d}</p><p class="pu" style="margin: 0; font-weight: 500">{t('Read the article', 'Leer el artículo')} ↗</p></a>''' for s, img, m, h, d in posts)
+    cards = ''.join(f'''<a class="work reveal" href="{u('/blog/' + s + '/')}"><div class="shot" data-label="{t('Read the article →', 'Leer el artículo →')}" style="aspect-ratio: 16 / 9"><img src="{img}" alt="" loading="lazy" width="1672" height="941"></div><p class="sm" style="margin: 0; letter-spacing: .08em; text-transform: uppercase">{m}</p><h2 class="h3" style="font-size: 30px">{h}</h2><p class="txt">{d}</p><p class="pu" style="margin: 0; font-weight: 500">{t('Read the article', 'Leer el artículo')} ↗</p></a>''' for s, img, m, h, d in posts)
     body = hero(t('Journal', 'Blog'), t('Notes from <span class="pu">my desk.</span>', 'Notas desde <span class="pu">mi escritorio.</span>'), t('Practical guides to planning and maintaining a website.', 'Guías prácticas para planificar y mantener un sitio web.'))
     body += f'<section class="sec"><div class="wrap pad" style="padding-top: 64px"><div class="g2" style="gap: 48px 40px">{cards}</div></div></section>'
     write_page('/blog/', t('Website Planning & Migration Blog | Pancratzia', 'Blog de planificación y migración web | Pancratzia'),

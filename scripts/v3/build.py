@@ -14,6 +14,7 @@ import pages_home
 import pages_main
 
 HERE = Path(__file__).resolve().parent
+LEGACY_COMMIT = '06b4182'
 KEEP = {'locale.js', 'sitemap.xsl', 'robots.txt', 'sitemap.xml', 'site.css', 'site.js'}
 
 FAVICON = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#7136d0"/><path fill="#fff" d="M7 5h12l6 6v6l-6 6h-5v4H7V5Zm7 6v6h3l2-2v-2l-2-2h-3Z"/><path fill="#ddd0ef" d="M26 20l1 3 3 1-3 1-1 3-1-3-3-1 3-1Z"/></svg>\n'
@@ -21,9 +22,12 @@ MARK = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width=
 
 
 def main():
-    old = legacy.load() if (DIST / 'services/web-design/index.html').exists() and 'svc-block' not in (DIST / 'services/web-design/index.html').read_text() else None
-    if old is None:
-        raise SystemExit('Legacy pages already converted; restore dist/ from git before rebuilding.')
+    # Long-form copy comes from the last pre-v3 build, kept in git history.
+    import subprocess, tempfile, tarfile, io
+    tmp = Path(tempfile.mkdtemp())
+    data = subprocess.run(['git', 'archive', LEGACY_COMMIT, 'dist'], cwd=DIST.parent, capture_output=True, check=True).stdout
+    tarfile.open(fileobj=io.BytesIO(data)).extractall(tmp, filter='data')
+    old = legacy.load(tmp / 'dist')
     for f in list(DIST.rglob('*')):
         if f.is_file() and 'assets' not in f.parts and f.name not in KEEP and f.suffix in ('.html', '.css', '.js'):
             f.unlink()

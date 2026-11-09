@@ -25,10 +25,10 @@ def _inner(el):
     return ''.join(str(c) for c in el.contents).strip()
 
 
-def load():
+def load(src=DIST):
     pages = {}
-    for f in sorted(DIST.rglob('index.html')):
-        rel = '/' + f.relative_to(DIST).parent.as_posix() + '/'
+    for f in sorted(src.rglob('index.html')):
+        rel = '/' + f.relative_to(src).parent.as_posix() + '/'
         rel = rel.replace('//', '/')
         es = rel.startswith('/es/')
         base = rel[3:] if es else rel
@@ -102,7 +102,7 @@ def load():
 def render(pages):
     for (base, es), p in pages.items():
         STATE['es'] = es
-        hero = f'''<section class="sec"><div class="wrap pad g2" style="gap: 56px; align-items: end; padding-bottom: 72px">
+        hero = f'''<section class="sec dots" style="position: relative; overflow: hidden"><svg class="hero-deco spin hide-m" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3Z"></path></svg><div class="wrap pad g2" style="gap: 56px; align-items: end; padding-bottom: 72px; position: relative">
 <div><p class="crumb">{_crumb(base)}</p>{f'<p class="eyebrow up d1">{p["eyebrow"]}</p>' if p['eyebrow'] else ''}<h1 class="h1 up d2" style="font-size: 68px">{p['h1']}</h1></div>
 <div class="up d3" style="display: flex; flex-direction: column; gap: 24px">{f'<p class="lead">{p["lead"]}</p>' if p['lead'] else ''}{_actions(p['kind'], base)}</div>
 </div></section>'''
