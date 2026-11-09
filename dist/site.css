@@ -150,7 +150,7 @@ table.t th,table.t td{padding:12px 10px;font-size:14px}
 @media (max-width:960px){.pz .h1{font-size:46px !important;line-height:1}.pz .h2{font-size:36px !important}.pz .price{font-size:48px !important}.pz .hero > div:last-child img{min-height:360px !important}}
 /* ---- v3.1 depth pass ---- */
 .dots{background-image:radial-gradient(#d3c8e3 1.2px,transparent 1.3px);background-size:22px 22px}
-.hero-deco{position:absolute;right:-60px;top:-60px;width:320px;height:320px;fill:none;stroke:#7136d0;stroke-width:.25;opacity:.5;animation-duration:60s}
+.hero-deco{position:absolute;right:-110px;top:-90px;width:300px;height:300px;fill:none;stroke:#7136d0;stroke-width:.25;opacity:.3;animation-duration:60s}
 .box{box-shadow:8px 8px 0 #251b33}
 .shot{box-shadow:8px 8px 0 #251b33;transition:box-shadow .3s,transform .3s}
 .work:hover .shot{transform:translate(-4px,-4px);box-shadow:14px 14px 0 #7136d0}
@@ -181,3 +181,4 @@ details summary:hover{color:#7136d0}
 .price{color:inherit}
 .btn-p{box-shadow:4px 4px 0 #251b33}.btn-p:hover{box-shadow:6px 6px 0 #251b33}
 @media (max-width:960px){.hero-art{min-height:520px}.hero-word{font-size:96px}.box,.shot{box-shadow:5px 5px 0 #251b33}section.purple:has(.marq){margin:-8px -10px 8px}.footword{font-size:64px}}
+.purple .list li::before{background:#fff}

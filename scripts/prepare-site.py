@@ -10,7 +10,6 @@ import re
 import xml.etree.ElementTree as ET
 from lxml import etree
 from create_404 import create_pages
-from create_contact import remove_forms
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
@@ -55,7 +54,6 @@ class Metadata(HTMLParser):
 
 
 def prepare():
-    remove_forms()
     create_pages()
     previous = json.loads(STATE.read_text()) if STATE.exists() else {}
     today = datetime.now(timezone.utc).date().isoformat()
