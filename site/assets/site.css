@@ -926,3 +926,16 @@ html[lang="es"] .nav-actions .project-action.small .action-icon { display: none;
 @media (max-width: 480px) {
   .price-card th, .price-card td { overflow-wrap: anywhere; }
 }
+
+/* Legal pages */
+.legal{max-width:760px}
+.legal-updated{color:var(--muted);font-size:.9rem;margin:0 0 36px}
+.legal h2{font-size:clamp(1.2rem,2vw,1.5rem);line-height:1.25;letter-spacing:-.03em;margin:44px 0 12px}
+.legal h2:first-of-type{margin-top:0}
+.legal p,.legal li{color:var(--muted)}
+.legal strong{color:var(--ink)}
+.legal ul{padding-left:1.2em;margin:0 0 16px}
+.legal li{margin-bottom:6px}
+.legal a{color:var(--violet-dark);text-decoration:underline;text-underline-offset:3px}
+.legal-links{display:flex;flex-wrap:wrap;gap:18px}
+.legal-links a:hover,.legal-links a:focus-visible{color:#fff}
