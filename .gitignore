@@ -1,10 +1,12 @@
-# Build output (GitHub Actions builds _site from dist/)
-_site/
-__pycache__/
-*.pyc
-
 # OS / editor
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
+
+# Local tooling
+node_modules/
+_site/
+*.log
+.env
 *.env
