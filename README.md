@@ -14,7 +14,7 @@ Pancratzia presents Laura's services, selected client work, pricing and contact 
 - [GSAP](https://gsap.com) 3.13 with ScrollTrigger for motion, served locally from `site/assets/`.
 - Self-hosted Manrope and Instrument Serif fonts (`.woff2`, licenses included).
 - WebP images and per-page Open Graph share cards.
-- Google Tag Manager and Google Analytics 4.
+- Google Tag Manager and Google Analytics 4, loaded only after the visitor accepts the cookie banner (`site/assets/consent.js`, Google Consent Mode).
 - GitHub Pages with a custom domain, deployed through GitHub Actions.
 
 ## Run locally

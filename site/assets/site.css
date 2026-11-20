@@ -939,3 +939,15 @@ html[lang="es"] .nav-actions .project-action.small .action-icon { display: none;
 .legal a{color:var(--violet-dark);text-decoration:underline;text-underline-offset:3px}
 .legal-links{display:flex;flex-wrap:wrap;gap:18px}
 .legal-links a:hover,.legal-links a:focus-visible{color:#fff}
+
+/* Cookie consent */
+.cookie-banner{position:fixed;z-index:20;left:24px;bottom:24px;width:min(420px,calc(100% - 32px));padding:20px 22px;background:var(--night);color:#fff;border:1px solid #ffffff26;border-radius:16px;box-shadow:0 18px 50px #19152640;font-size:.9rem;line-height:1.55}
+.cookie-banner p{margin:0 0 14px;color:#d9d1e6}
+.cookie-banner .cookie-title{margin:0 0 6px;color:#fff;font-weight:800;font-size:1rem}
+.cookie-banner a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cookie-actions .button{flex:1 1 120px}
+.cookie-actions .button.ghost{color:#fff}
+.cookie-settings{background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer}
+.cookie-settings:hover,.cookie-settings:focus-visible{color:#fff}
+@media(max-width:600px){.cookie-banner{left:16px;bottom:16px}}
